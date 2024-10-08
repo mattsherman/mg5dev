@@ -1,5 +1,5 @@
 export const title = "Welcome to mg5.dev";
-export const layout = "layout.tsx";
+export const layout = "layouts/layout.tsx";
 
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
