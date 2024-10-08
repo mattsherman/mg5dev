@@ -7,6 +7,8 @@ const site = lume({
   src: "./src",
 });
 
+site.loadAssets([".css"]);
+
 site.use(jsx());
 
 site.use(date());
