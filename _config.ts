@@ -3,6 +3,8 @@ import feed from "lume/plugins/feed.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
 import lume from "lume/mod.ts";
 
+Deno.env.set("TZ", "America/New_York");
+
 const site = lume({
   src: "./src",
 });
