@@ -8,8 +8,8 @@
     "serve": "deno task lume -s"
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ]
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact",
+    "types": ["lume/types.ts"]
   }
 }
