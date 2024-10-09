@@ -67,3 +67,23 @@ body > main {
         margin-bottom: 1.5rem;
     }
 }
+
+.post-list-item {
+    margin-bottom: 5rem;
+
+    > header {
+        margin: 3rem 0 1.5rem;
+
+        text-transform: uppercase;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    > .post-excerpt {
+        color: gray;
+
+        font-style: italic;
+    }
+}
