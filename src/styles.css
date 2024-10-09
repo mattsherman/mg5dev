@@ -15,6 +15,8 @@ html {
 }
 
 a {
+    font-size: inherit;
+
     border-bottom: 1px dotted blue;
 
     color: blue;
