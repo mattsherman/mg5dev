@@ -9,6 +9,8 @@ const site = lume({
   src: "./src",
 });
 
+site.copy("static");
+
 site.loadAssets([".css"]);
 
 site.use(jsx());
