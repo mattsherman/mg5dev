@@ -1,7 +1,8 @@
 export default (data: Lume.Data, helpers: Lume.Helpers) => {
+  const { HUMAN_DATE_FORMAT } = data;
   const { date } = helpers;
 
-  const formattedDate = date(data.date);
+  const formattedDate = date(data.date, HUMAN_DATE_FORMAT);
 
   return (
     <html lang="en">

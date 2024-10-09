@@ -2,15 +2,17 @@ export const title = "Blog";
 export const layout = "layouts/layout.tsx";
 
 interface PostListItemProps {
+  data: Lume.Data;
   post: Lume.Data;
   helpers: Lume.Helpers;
 }
 
-function PostListItem({ post, helpers }: PostListItemProps) {
+function PostListItem({ data, post, helpers }: PostListItemProps) {
+  const { HUMAN_DATE_FORMAT } = data;
   const { date, url } = helpers;
 
   const postUrl = url(post.url);
-  const formattedDate = date(post.date);
+  const formattedDate = date(post.date, HUMAN_DATE_FORMAT);
 
   return (
     <article class="post-list-item">
@@ -39,7 +41,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
   return (
     <>
       {posts.map((post) => {
-        return <PostListItem post={post} helpers={helpers} />;
+        return <PostListItem data={data} post={post} helpers={helpers} />;
       })}
     </>
   );
