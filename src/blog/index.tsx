@@ -1,4 +1,4 @@
-export const title = "mg5.dev Blog";
+export const title = "Blog";
 export const layout = "layouts/layout.tsx";
 
 interface PostListItemProps {
