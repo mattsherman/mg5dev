@@ -31,8 +31,6 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
 
   return (
     <>
-      <h1>{data.title}</h1>
-
       {posts.map((post) => {
         return <PostListItem post={post} helpers={helpers} />;
       })}
