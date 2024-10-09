@@ -13,14 +13,21 @@ function PostListItem({ post, helpers }: PostListItemProps) {
   const formattedDate = date(post.date);
 
   return (
-    <article>
+    <article class="post-list-item">
       <header>
         <h2>
           <a href={postUrl}>{post.title}</a>
         </h2>
-        <p>{formattedDate}</p>
-        <p>{post.excerpt}</p>
+        <div>
+          <time datetime={post.date.toISOString()}>{formattedDate}</time>
+        </div>
       </header>
+      <div class="post-excerpt">
+        <p>{post.excerpt}</p>
+      </div>
+      <div>
+        <a href={postUrl}>Read post</a>
+      </div>
     </article>
   );
 }
