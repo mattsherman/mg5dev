@@ -12,7 +12,14 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
       </head>
       <body>
         <nav>
-          <a href="/">mg5.dev</a> &gt; <a href="/blog">Blog</a>
+          <ol>
+            <li>
+              <a href="/">mg5.dev</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ol>
         </nav>
         <main>
           <header>

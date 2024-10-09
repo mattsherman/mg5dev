@@ -7,7 +7,13 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     </head>
     <body>
       <nav>
-        <a href="/">mg5.dev</a>
+        <nav>
+          <ol>
+            <li>
+              <a href="/">mg5.dev</a>
+            </li>
+          </ol>
+        </nav>
       </nav>
       <main>
         <header>
