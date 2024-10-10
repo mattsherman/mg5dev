@@ -20,9 +20,14 @@ function PostListItem({ data, post, helpers }: PostListItemProps) {
         <h2>
           <a href={postUrl}>{post.title}</a>
         </h2>
-        <div>
-          <time datetime={post.date.toISOString()}>{formattedDate}</time>
-        </div>
+        <ul class="post-metadata">
+          <li>
+            <time datetime={post.date.toISOString()}>{formattedDate}</time>
+          </li>
+          <li>
+            <address>{post.author}</address>
+          </li>
+        </ul>
       </header>
       <div class="post-excerpt">
         <p>{post.excerpt}</p>

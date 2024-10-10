@@ -25,9 +25,14 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <main>
           <header>
             <h1>{data.title}</h1>
-            <div>
-              <time datetime={data.date.toISOString()}>{formattedDate}</time>
-            </div>
+            <ul class="post-metadata">
+              <li>
+                <time datetime={data.date.toISOString()}>{formattedDate}</time>
+              </li>
+              <li>
+                <address>{data.author}</address>
+              </li>
+            </ul>
           </header>
 
           {data.children}
