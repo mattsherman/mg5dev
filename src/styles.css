@@ -170,6 +170,49 @@ body > main {
   }
 }
 
+.home-page-icons {
+  display: flex;
+
+  padding-inline-start: 0;
+
+  list-style-type: none;
+
+  gap: 1rem;
+
+  justify-content: center;
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 150px;
+
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    &::before {
+      font-size: 3rem;
+    }
+
+    &.home-page-blog-list-item::before {
+      content: "📃";
+    }
+
+    &.home-page-github-list-item::before {
+      content: "🐙";
+    }
+
+    &.home-page-linkedin-list-item::before {
+      content: "💼";
+    }
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
+
 .post-list-item {
   margin-bottom: 5rem;
 
