@@ -66,22 +66,28 @@
 /* Variables */
 
 :root {
+  --base-font-family: "iA Writer Quattro", monospace;
+  --base-font-size: 13pt;
+
+  --link-color: blue;
+  --visited-link-color: purple;
+
   --horizontal-list-separator: "•";
 }
 
 /* Global styles */
 
 html {
-  font-family: "iA Writer Quattro", monospace;
-  font-size: 13pt;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
 }
 
 a {
   font-size: inherit;
 
-  border-bottom: 1px dotted blue;
+  border-bottom: 1px dotted var(--link-color);
 
-  color: blue;
+  color: var(--link-color);
 
   text-decoration: none;
 
@@ -90,13 +96,13 @@ a {
     border-bottom-width: 2px;
 
     &:visited {
-      border-color: purple;
+      border-color: var(--visited-link-color);
     }
   }
 
   &:visited {
-    border-color: purple;
-    color: purple;
+    border-color: var(--visited-link-color);
+    color: var(--visited-link-color);
   }
 }
 
