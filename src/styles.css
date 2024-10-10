@@ -173,12 +173,6 @@ body > main {
     h2 {
       font-size: 1.5rem;
     }
-
-    .post-list-item__metadata {
-      display: flex;
-
-      gap: 1em;
-    }
   }
 
   > .post-excerpt {
@@ -186,7 +180,4 @@ body > main {
 
     font-style: italic;
   }
-}
-
-.post-metadata {
 }
