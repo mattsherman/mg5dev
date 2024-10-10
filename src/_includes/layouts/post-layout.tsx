@@ -13,7 +13,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
       </head>
       <body>
         <nav>
-          <ol>
+          <ol class="header-breadcrumb horizontal-list">
             <li>
               <a href="/">mg5.dev</a>
             </li>
@@ -25,7 +25,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <main>
           <header>
             <h1>{data.title}</h1>
-            <ul class="post-metadata">
+            <ul class="post-metadata horizontal-list">
               <li>
                 <time datetime={data.date.toISOString()}>{formattedDate}</time>
               </li>

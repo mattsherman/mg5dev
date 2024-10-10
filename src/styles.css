@@ -63,6 +63,12 @@
   margin: 0;
 }
 
+/* Variables */
+
+:root {
+  --horizontal-list-separator: "•";
+}
+
 /* Global styles */
 
 html {
@@ -103,17 +109,8 @@ body > nav {
 
   text-transform: uppercase;
 
-  ol {
-    display: flex;
-
-    padding-inline-start: 0;
-
-    list-style-type: none;
-
-    li:not(:last-child)::after {
-      content: "▸";
-      margin: 0 0.5em;
-    }
+  .header-breadcrumb {
+    --horizontal-list-separator: "▸";
   }
 }
 
@@ -146,6 +143,19 @@ body > main {
 
 /* Specific styles */
 
+.horizontal-list {
+  display: flex;
+
+  padding-inline-start: 0;
+
+  list-style-type: none;
+
+  li:not(:last-child)::after {
+    content: var(--horizontal-list-separator);
+    margin: 0 0.5em;
+  }
+}
+
 .post-list-item {
   margin-bottom: 5rem;
 
@@ -173,14 +183,4 @@ body > main {
 }
 
 .post-metadata {
-  display: flex;
-
-  padding-inline-start: 0;
-
-  list-style-type: none;
-
-  li:not(:last-child)::after {
-    content: "•";
-    margin: 0 0.5em;
-  }
 }

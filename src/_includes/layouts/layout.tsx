@@ -8,7 +8,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     <body>
       <nav>
         <nav>
-          <ol>
+          <ol class="horizontal-list">
             <li>
               <a href="/">mg5.dev</a>
             </li>

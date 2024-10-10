@@ -11,7 +11,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <h2>
           <a href={postUrl}>{post.title}</a>
         </h2>
-        <ul class="post-metadata">
+        <ul class="post-metadata horizontal-list">
           <li>
             <time datetime={post.date.toISOString()}>{formattedDate}</time>
           </li>
