@@ -69,6 +69,11 @@
   --base-font-family: "iA Writer Quattro", monospace;
   --base-font-size: 13pt;
 
+  --base-color: black;
+  --base-background-color: white;
+
+  --base-secondary-color: hsl(from var(--base-color) h s calc(l + 33));
+
   --link-color: blue;
   --visited-link-color: purple;
 
@@ -80,6 +85,9 @@
 html {
   font-family: var(--base-font-family);
   font-size: var(--base-font-size);
+
+  color: var(--base-color);
+  background: var(--base-background-color);
 }
 
 a {
@@ -176,7 +184,7 @@ body > main {
   }
 
   > .post-excerpt {
-    color: gray;
+    color: var(--base-secondary-color);
 
     font-style: italic;
   }
