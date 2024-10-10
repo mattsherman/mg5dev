@@ -22,12 +22,13 @@ site.use(
     output: ["/posts.rss", "/posts.json"],
     query: "type=post",
     info: {
-      title: "My blog",
-      description: "This is my blog",
+      title: "mg5.dev Blog",
     },
     items: {
       title: "=title",
       description: "=excerpt",
+      published: "=date",
+      content: "=children",
     },
   })
 );
