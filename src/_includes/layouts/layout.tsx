@@ -22,6 +22,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
 
         {data.children}
       </main>
+      <data.comp.Footer />
     </body>
   </html>
 );
