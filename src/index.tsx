@@ -4,14 +4,23 @@ export const layout = "layouts/layout.tsx";
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
     <ul class="home-page-icons">
-      <li class="home-page-blog-list-item">
-        <a href="/blog">Blog</a>
+      <li>
+        <a href="/blog" class="home-page-blog-link">
+          Blog
+        </a>
       </li>
-      <li class="home-page-github-list-item">
-        <a href="https://github.com/mattsherman">GitHub</a>
+      <li>
+        <a href="https://github.com/mattsherman" class="home-page-github-link">
+          GitHub
+        </a>
       </li>
-      <li class="home-page-linkedin-list-item">
-        <a href="https://www.linkedin.com/in/matthewsherman/">LinkedIn</a>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/matthewsherman/"
+          class="home-page-linkedin-link"
+        >
+          LinkedIn
+        </a>
       </li>
     </ul>
   </>
