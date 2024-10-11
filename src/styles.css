@@ -93,23 +93,17 @@ html {
 a {
   font-size: inherit;
 
-  border-bottom: 1px dotted var(--link-color);
-
   color: var(--link-color);
 
-  text-decoration: none;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
 
   &:hover {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-
-    &:visited {
-      border-color: var(--visited-link-color);
-    }
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
   }
 
   &:visited {
-    border-color: var(--visited-link-color);
     color: var(--visited-link-color);
   }
 }
