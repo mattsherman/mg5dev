@@ -78,6 +78,7 @@
   --visited-link-color: purple;
 
   --horizontal-list-separator: "•";
+  --horizontal-list-separator-margin: 0 0.5em;
 }
 
 /* Global styles */
@@ -160,15 +161,19 @@ body > footer {
 /* Specific styles */
 
 .horizontal-list {
-  display: flex;
+  display: inline;
 
   padding-inline-start: 0;
 
-  list-style-type: none;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
 
   li:not(:last-child)::after {
     content: var(--horizontal-list-separator);
-    margin: 0 0.5em;
+    margin: var(--horizontal-list-separator-margin);
   }
 }
 
@@ -230,6 +235,10 @@ body > footer {
 
     h2 {
       font-size: 1.5rem;
+    }
+
+    .horizontal-list li address {
+      display: inline;
     }
   }
 
