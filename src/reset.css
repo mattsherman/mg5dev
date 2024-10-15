@@ -5,12 +5,9 @@
 }
 
 * {
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
 
   margin: 0;
-}
-
-address {
-  font-style: normal;
 }
