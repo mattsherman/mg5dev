@@ -49,23 +49,6 @@ body > footer {
 
 /* Specific styles */
 
-.horizontal-list {
-  display: inline;
-
-  padding-inline-start: 0;
-
-  list-style: none;
-
-  li {
-    display: inline;
-  }
-
-  li:not(:last-child)::after {
-    content: var(--horizontal-list-separator);
-    margin: var(--horizontal-list-separator-margin);
-  }
-}
-
 .home-page-icons {
   display: flex;
 

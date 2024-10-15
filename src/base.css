@@ -41,7 +41,7 @@ a {
 }
 
 .horizontal-list {
-  display: inline;
+  display: inline-flex;
 
   padding-inline-start: 0;
 
