@@ -1,0 +1,58 @@
+:root {
+  --base-font-family: "iA Writer Quattro", monospace;
+  --base-font-size: 13pt;
+
+  --base-color: black;
+  --base-background-color: white;
+
+  --base-secondary-color: hsl(from var(--base-color) h s calc(l + 33));
+
+  --link-color: blue;
+  --visited-link-color: purple;
+
+  --horizontal-list-separator: "•";
+  --horizontal-list-separator-margin: 0 0.5em;
+}
+
+html {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+
+  color: var(--base-color);
+  background: var(--base-background-color);
+}
+
+a {
+  font-size: inherit;
+
+  color: var(--link-color);
+
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+  }
+
+  &:visited {
+    color: var(--visited-link-color);
+  }
+}
+
+.horizontal-list {
+  display: inline;
+
+  padding-inline-start: 0;
+
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  li:not(:last-child)::after {
+    content: var(--horizontal-list-separator);
+    margin: var(--horizontal-list-separator-margin);
+  }
+}

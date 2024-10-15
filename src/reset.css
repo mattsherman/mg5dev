@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 1rem;
+  font-weight: normal;
+
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
