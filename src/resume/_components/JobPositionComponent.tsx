@@ -42,16 +42,6 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         {details.map((detail: string, index: number) => (
           <li key={index}>{detail}</li>
         ))}
-        <li class="skills-list">
-          <dt class="category">Skills</dt>
-          <dd class="skills">
-            {skills.map((skill, index) => (
-              <span key={index} class="skill">
-                {skill}
-              </span>
-            ))}
-          </dd>
-        </li>
       </ul>
     </article>
   );
