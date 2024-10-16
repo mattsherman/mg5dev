@@ -1,0 +1,229 @@
+@import url("/reset.css");
+@import url("/base.css");
+
+@media print {
+  @page {
+    size: letter;
+    margin: .5in;
+
+    @bottom-center {
+      content: "Page " counter(page) " of " counter(pages);
+    }
+  }
+}
+
+:root {
+  --base-font-family: "Helvetica Neue", sans-serif;
+
+  --base-color: black;
+  --base-background-color: white;
+
+  --horizontal-list-separator: ", ";
+  --horizontal-list-separator-margin: 0;
+}
+
+html {
+  @media print {
+    font-size: 10pt;
+  }
+}
+
+body {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+
+  line-height: 1.5;
+
+  @media (max-width: 800px) {
+    margin: 2rem auto;
+  }
+
+  @media print {
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 800;
+
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-bottom: .5rem;
+}
+
+body > header {
+  margin-bottom: 2rem;
+
+  .title {
+    font-size: 1.25rem;
+
+    color: var(--base-secondary-color);
+  }
+
+  > address {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "location email linkedin"
+      "location phone github";
+
+    margin: 1rem 0;
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "location location"
+        "email linkedin"
+        "phone github";
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "location"
+        "email"
+        "phone"
+        "linkedin"
+        "github";
+    }
+
+    a {
+      color: inherit;
+
+      text-decoration-line: none;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+
+      &:visited {
+        color: inherit;
+      }
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .location {
+      grid-area: location;
+    }
+
+    .phone {
+      grid-area: phone;
+    }
+
+    .linkedin {
+      grid-area: linkedin;
+    }
+
+    .github {
+      grid-area: github;
+    }
+  }
+}
+
+section {
+  margin: 2rem 0;
+
+  > article {
+    margin-bottom: 1rem;
+
+    break-inside: avoid;
+  }
+}
+
+.skills-section,
+.education-section {
+  break-inside: avoid;
+}
+
+.job-position,
+.education-entry {
+  > header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title date-range"
+      "subtitle subtitle";
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        "title title"
+        "subtitle date-range";
+    }
+
+    .title {
+      grid-area: title;
+    }
+
+    .date-range {
+      grid-area: date-range;
+
+      color: var(--base-secondary-color);
+    }
+
+    .subtitle {
+      grid-area: subtitle;
+
+      color: var(--base-secondary-color);
+    }
+  }
+}
+
+.job-position
+{
+  .details {
+    padding-inline-start: 2rem;
+
+    list-style-type: square;
+
+    @media (max-width: 500px) {
+      padding-inline-start: 1rem;
+    }
+  }
+}
+
+.education-entry {
+  .degree-and-major {
+    color: var(--base-secondary-color);
+  }
+}
+
+.skills-list {
+  > * {
+    display: inline;
+  }
+
+  > .category {
+    color: var(--base-secondary-color);
+
+    &::after {
+      content: ": ";
+    }
+  }
+
+  .skill:not(:last-child)::after {
+    content: ", ";
+  }
+}
