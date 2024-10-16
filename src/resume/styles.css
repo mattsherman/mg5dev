@@ -7,7 +7,7 @@
     margin: .5in;
 
     @bottom-center {
-      content: "Page " counter(page) " of " counter(pages);
+      content: counter(page) "/" counter(pages);
     }
   }
 }
