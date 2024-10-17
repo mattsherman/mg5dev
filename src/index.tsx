@@ -10,6 +10,11 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
         </a>
       </li>
       <li>
+        <a href="/resume" class="home-page-resume-link">
+          Résumé
+        </a>
+      </li>
+      <li>
         <a href="https://github.com/mattsherman" class="home-page-github-link">
           GitHub
         </a>
