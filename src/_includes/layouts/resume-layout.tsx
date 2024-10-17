@@ -6,6 +6,15 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
       <link rel="stylesheet" href="/resume/styles.css" />
       <title>{data.title}</title>
     </head>
-    <body>{data.children}</body>
+    <body>
+      <nav>
+        <ol class="horizontal-list">
+          <li>
+            <a href="/">mg5.dev</a>
+          </li>
+        </ol>
+      </nav>
+      {data.children}
+    </body>
   </html>
 );

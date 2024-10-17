@@ -40,6 +40,16 @@ a {
   }
 }
 
+body > nav {
+  padding: 1rem;
+
+  text-transform: uppercase;
+
+  .header-breadcrumb {
+    --horizontal-list-separator: "▸";
+  }
+}
+
 .horizontal-list {
   display: inline-flex;
 

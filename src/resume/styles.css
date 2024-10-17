@@ -1,4 +1,5 @@
 @import url("/reset.css");
+@import url("/fonts.css");
 @import url("/base.css");
 
 @media print {
@@ -12,33 +13,36 @@
   }
 }
 
-:root {
-  --max-width: 1200px;
-
-  --base-font-family: "Helvetica Neue", sans-serif;
-
-  --base-color: black;
-  --base-background-color: white;
-
-  --horizontal-list-separator: ", ";
-  --horizontal-list-separator-margin: 0;
-}
-
 html {
   @media print {
+    font-family: "Helvetica Neue", sans-serif;
     font-size: 10pt;
   }
 }
 
-body {
+body > nav {
+  @media print {
+    display: none;
+  }
+}
+
+.resume {
+  --max-width: 1200px;
+
+  --horizontal-list-separator: ", ";
+  --horizontal-list-separator-margin: 0;
+
+  font-family: "Helvetica Neue", sans-serif;
+
   max-width: var(--max-width);
-  margin: 4rem auto;
-  padding: 0 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
 
   line-height: 1.5;
 
-  @media (max-width: var(--max-width)) {
-    margin: 2rem auto;
+  /* media query doesn't support variables */
+  @media (max-width: 1200px) {
+    margin: 0 auto;
   }
 
   @media print {
@@ -47,185 +51,185 @@ body {
     margin: 0;
     padding: 0;
   }
-}
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: 800;
-
-  margin-bottom: .5rem;
-}
-
-p {
-  margin-bottom: .5rem;
-}
-
-body > header {
-  margin-bottom: 2rem;
-
-  .title {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
     font-size: 1.25rem;
-
-    color: var(--base-secondary-color);
-  }
-
-  > address {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "location email linkedin"
-      "location phone github";
-
-    margin: 1rem 0;
-
-    @media (max-width: 700px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "location location"
-        "email linkedin"
-        "phone github";
-    }
-
-    @media (max-width: 500px) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "location"
-        "email"
-        "phone"
-        "linkedin"
-        "github";
-    }
-
-    a {
-      color: inherit;
-
-      text-decoration-line: none;
-
-      &:hover {
-        text-decoration-line: underline;
-      }
-
-      &:visited {
-        color: inherit;
-      }
-    }
-
-    .email {
-      grid-area: email;
-    }
-
-    .location {
-      grid-area: location;
-    }
-
-    .phone {
-      grid-area: phone;
-    }
-
-    .linkedin {
-      grid-area: linkedin;
-    }
-
-    .github {
-      grid-area: github;
-    }
-  }
-}
-
-section {
-  margin: 2rem 0;
-
-  > article {
+  
     margin-bottom: 1rem;
-
-    break-inside: avoid;
   }
-}
+  
+  h3 {
+    font-size: 1rem;
+    font-weight: 800;
+  
+    margin-bottom: .5rem;
+  }
+  
+  p {
+    margin-bottom: .5rem;
+  }  
 
-.skills-section,
-.education-section {
-  break-inside: avoid;
-}
+  a {
+    color: inherit;
 
-.job-position,
-.education-entry {
-  > header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "title date-range"
-      "subtitle subtitle";
+    text-decoration-line: none;
 
-    @media (max-width: 500px) {
-      grid-template-columns: 1fr auto;
-      grid-template-areas:
-        "title title"
-        "subtitle date-range";
+    &:hover {
+      text-decoration-line: underline;
     }
+
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  > header {
+    margin-bottom: 2rem;
 
     .title {
-      grid-area: title;
-    }
-
-    .date-range {
-      grid-area: date-range;
+      font-size: 1.25rem;
 
       color: var(--base-secondary-color);
     }
 
-    .subtitle {
-      grid-area: subtitle;
+    > address {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "location email linkedin"
+        "location phone github";
 
+      margin: 1rem 0;
+
+      @media (max-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "location location"
+          "email linkedin"
+          "phone github";
+      }
+
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "location"
+          "email"
+          "phone"
+          "linkedin"
+          "github";
+      }
+
+      .email {
+        grid-area: email;
+      }
+
+      .location {
+        grid-area: location;
+      }
+
+      .phone {
+        grid-area: phone;
+      }
+
+      .linkedin {
+        grid-area: linkedin;
+      }
+
+      .github {
+        grid-area: github;
+      }
+    }
+  }
+
+  section {
+    margin: 2rem 0;
+  
+    > article {
+      margin-bottom: 1rem;
+  
+      break-inside: avoid;
+    }
+  }
+  
+  .skills-section,
+  .education-section {
+    break-inside: avoid;
+  }
+  
+  .job-position,
+  .education-entry {
+    > header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "title date-range"
+        "subtitle subtitle";
+  
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "title title"
+          "subtitle date-range";
+      }
+  
+      .title {
+        grid-area: title;
+      }
+  
+      .date-range {
+        grid-area: date-range;
+  
+        color: var(--base-secondary-color);
+      }
+  
+      .subtitle {
+        grid-area: subtitle;
+  
+        color: var(--base-secondary-color);
+      }
+    }
+  }
+  
+  .job-position
+  {
+    .details {
+      padding-inline-start: 2rem;
+  
+      list-style-type: square;
+  
+      @media (max-width: 500px) {
+        padding-inline-start: 1rem;
+      }
+    }
+  }
+  
+  .education-entry {
+    .degree-and-major {
       color: var(--base-secondary-color);
     }
   }
-}
-
-.job-position
-{
-  .details {
-    padding-inline-start: 2rem;
-
-    list-style-type: square;
-
-    @media (max-width: 500px) {
-      padding-inline-start: 1rem;
+  
+  .skills-list {
+    > * {
+      display: inline;
     }
-  }
-}
-
-.education-entry {
-  .degree-and-major {
-    color: var(--base-secondary-color);
-  }
-}
-
-.skills-list {
-  > * {
-    display: inline;
-  }
-
-  > .category {
-    color: var(--base-secondary-color);
-
-    &::after {
-      content: ": ";
+  
+    > .category {
+      color: var(--base-secondary-color);
+  
+      &::after {
+        content: ": ";
+      }
     }
-  }
-
-  .skill:not(:last-child)::after {
-    content: ", ";
+  
+    .skill:not(:last-child)::after {
+      content: ", ";
+    }
   }
 }
