@@ -1,6 +1,6 @@
 # mg5-dev-web
 
-This is the repository for https://mg5.dev, Matt Sherman's personal development web site.
+This is the repository for https://mg5.dev, Matt Sherman's development web site.
 
 ## Development
 
