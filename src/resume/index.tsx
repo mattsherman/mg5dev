@@ -16,12 +16,19 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <h1>{resume.personalInformation.name}</h1>
         <p class="title">{resume.personalInformation.title}</p>
         <address>
-          <a href={`mailto:${resume.personalInformation.email}`} class="email">
-            {resume.personalInformation.email}
-          </a>
-          <a href={`tel:${resume.personalInformation.phone}`} class="phone">
-            {resume.personalInformation.phone}
-          </a>
+          {resume.personalInformation.email && (
+            <a
+              href={`mailto:${resume.personalInformation.email}`}
+              class="email"
+            >
+              {resume.personalInformation.email}
+            </a>
+          )}
+          {resume.personalInformation.phone && (
+            <a href={`tel:${resume.personalInformation.phone}`} class="phone">
+              {resume.personalInformation.phone}
+            </a>
+          )}
           <span class="location">{resume.personalInformation.location}</span>
           <a
             href={`https://linkedin.com/in/${resume.personalInformation.linkedin}`}
