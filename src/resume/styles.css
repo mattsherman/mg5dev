@@ -124,6 +124,10 @@ body > nav {
           "github";
       }
 
+      a {
+        text-wrap: nowrap;
+      }
+
       .email {
         grid-area: email;
       }
