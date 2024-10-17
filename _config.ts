@@ -22,7 +22,7 @@ site.use(
     output: ["/posts.rss", "/posts.json"],
     query: "type=post",
     info: {
-      title: "mg5.dev Blog",
+      title: "mg5.dev - Blog",
     },
     items: {
       title: "=title",
