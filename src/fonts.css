@@ -1,3 +1,5 @@
+/* When updating this file, make sure to bump the version number in files that import this, to bust the cache. */
+
 @font-face {
   font-family: "iA Writer Quattro";
   src: url("static/fonts/ia-writer-quattro/iAWriterQuattroS-Regular.woff2")

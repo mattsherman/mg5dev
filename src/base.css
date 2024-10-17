@@ -1,3 +1,5 @@
+/* When updating this file, make sure to bump the version number in files that import this, to bust the cache. */
+
 :root {
   --base-font-family: "iA Writer Quattro", monospace;
   --base-font-size: 13pt;
