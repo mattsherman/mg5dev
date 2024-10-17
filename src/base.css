@@ -41,11 +41,15 @@ a {
 }
 
 body > nav {
+  display: flex;
+
   padding: 1rem;
 
   text-transform: uppercase;
 
   .header-breadcrumb {
+    flex: 1;
+
     --horizontal-list-separator: "▸";
   }
 }

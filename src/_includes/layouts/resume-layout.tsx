@@ -8,11 +8,14 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     </head>
     <body>
       <nav>
-        <ol class="horizontal-list">
+        <ol class="header-breadcrumb horizontal-list">
           <li>
             <a href="/">mg5.dev</a>
           </li>
         </ol>
+        <div class="header-secondary">
+          <a href="/static/matt-sherman-resume.pdf">View PDF</a>
+        </div>
       </nav>
       {data.children}
     </body>
