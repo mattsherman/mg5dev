@@ -14,7 +14,7 @@ body > nav {
 }
 
 body > main {
-  max-width: 700px;
+  max-width: 800px;
 
   margin: 0 auto;
   padding: 0 1rem;
@@ -36,6 +36,22 @@ body > main {
     }
   }
 
+  h2 {
+    font-size: 1.25rem;
+
+    margin: 1.5rem 0; 
+
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+
+    margin: 1.5rem 0; 
+
+    text-transform: uppercase;
+  }
+
   p {
     margin-bottom: 1.5rem;
   }
@@ -53,7 +69,7 @@ body > footer {
 .home-page-icons {
   display: flex;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 
