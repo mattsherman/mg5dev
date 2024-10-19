@@ -4,6 +4,18 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href={`/${data.cacheBusterVersion}/styles.css`} />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        href="/posts.rss"
+        title="RSS Feed"
+      />
+      <link
+        rel="alternate"
+        type="application/json"
+        href="/posts.json"
+        title="JSON Feed"
+      />
       <title>{data.title}</title>
     </head>
     <body>
