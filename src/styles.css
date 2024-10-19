@@ -54,6 +54,8 @@ body > main {
 
   p {
     margin-bottom: 1.5rem;
+
+    text-wrap: pretty;
   }
 }
 
