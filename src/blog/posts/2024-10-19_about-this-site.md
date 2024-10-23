@@ -4,7 +4,7 @@ date: 2024-10-23T00:00:00-0400
 excerpt: Welcome to mg5.dev, my own little software development oriented site! Learn more about this site and the tech stack behind it.
 ---
 
-Welcome to [mg5.dev](https://mg5.dev), my own little software development oriented site!
+Welcome to [mg5.dev](https://mg5.dev), my own little software development site!
 
 This site serves as my “business card”, where you can find links to [my GitHub profile](https://github.com/mattsherman), [my LinkedIn profile](https://www.linkedin.com/in/matthewsherman/), and [my résumé](/resume).
 
