@@ -17,7 +17,7 @@
       "endDate": "2024-10T00:00-0400",
       "details": [
         "Developed key admin features for the WooCommerce open-source project using React and TypeScript",
-        "Designed extensibility APIs with PHP and WordPress hooks, facilitating third-party integrations",
+        "Designed REST APIs, as well as React and PHP APIs, facilitating third-party integrations",
         "Implemented usability and accessibility improvements for WooCommerce and nine separate extensions",
         "Engaged with third-party developers to gather feedback and share best practices",
         "Collaborated with product management to define and prioritize project scope, timelines, and deliverables",
@@ -117,7 +117,7 @@
     }
   ],
   "skills": {
-    "Languages": ["TypeScript", "JavaScript", "PHP"],
+    "Languages": ["TypeScript", "JavaScript", "HTML", "CSS", "PHP"],
     "Programming Paradigms": [
       "Object-Oriented",
       "Procedural",
