@@ -7,35 +7,39 @@
     "github": "mattsherman",
     "linkedin": "matthewsherman"
   },
-  "summary": "Full stack software engineer with extensive experience delivering commercial and open-source applications for the cloud, web, and desktop. Proven track record in technical and project leadership, with a strong focus on user experience.",
+  "summary": "Full stack software engineer with extensive experience delivering commercial and open-source applications for the cloud, web, and desktop in the e-commerce, publishing, and security industries. Focused on user experience and extensibility. Proven track record in technical and project leadership. A decade of experience working with fully distributed teams.",
   "positions": [
     {
       "title": "Senior Software Engineer",
-      "company": "Woo (Automattic)",
+      "company": "Automattic",
       "location": "Remote",
       "startDate": "2020-02T00:00-0400",
       "endDate": "2024-10T00:00-0400",
       "details": [
-        "Developed key admin features for the WooCommerce open-source project using React and TypeScript",
-        "Designed REST APIs, as well as React and PHP APIs, facilitating third-party integrations",
-        "Implemented usability and accessibility improvements for WooCommerce and nine separate extensions",
+        "Delivered new admin dashboard, analytics, and management features for WooCommerce using React, TypeScript, HTML, and CSS to improve performance, responsiveness, and user experience",
+        "Designed and implemented reusable React components to improve consistency and developer efficiency",
+        "Implemented REST APIs, for both internal consumption and third-party integrations",
+        "Implemented React and PHP APIs, enabling extension of WooCommerce by third-party developers",
+        "Improved usability and accessibility of WooCommerce and nine commercial extensions",
         "Engaged with third-party developers to gather feedback and share best practices",
         "Collaborated with product management to define and prioritize project scope, timelines, and deliverables",
-        "Maintained high quality code through regular code reviews, end-to-end tests in Playwright, and unit tests in Jest",
-        "Analyzed and resolved customer-reported bugs, enhancing customer satisfaction",
-        "Mentored new team members, facilitating effective onboarding and development process integration"
+        "Mentored new team members, facilitating effective onboarding and development process integration",
+        "Maintained team handbook, ensuring clear understanding of processes and best practices",
+        "Conducted regular code reviews, end-to-end tests in Playwright, and unit tests in Jest, ensuring code maintainability",
+        "Analyzed and resolved customer-reported bugs, enhancing customer satisfaction"
       ]
     },
     {
-      "title": "Software Development Manager",
-      "company": "WordPress.com (Automattic)",
+      "title": "Software Engineering Manager",
+      "company": "Automattic",
       "location": "Remote",
       "startDate": "2017-12T00:00-0500",
       "endDate": "2020-02T00:00-0500",
       "details": [
-        "Led a team of nine developers focused on continuous delivery of admin features and site importers",
-        "Worked with product management on priorities and deliverables, promoting cross-team communication",
-        "Led grooming and planning sessions for the team, ensuring clear understanding of requirements and timelines",
+        "Led agile delivery team focused on continuous delivery of React-based admin management features for WordPress.com, to improve user experience",
+        "Collaborated with product management on priorities and deliverables, promoting cross-team communication",
+        "Published weekly team updates, ensuring clear communication of project status and blockers",
+        "Led grooming and planning sessions for the team, ensuring shared understanding of requirements and timelines",
         "Facilitated team retrospectives to identify areas for process improvement and increased efficiency",
         "Supported team growth and development through regular one-on-one meetings and mentoring",
         "Completed Reboot leadership training, enhancing management skills"
@@ -43,14 +47,14 @@
     },
     {
       "title": "Senior Software Engineer",
-      "company": "WordPress.com (Automattic)",
+      "company": "Automattic",
       "location": "Remote",
       "startDate": "2014-10T00:00-0400",
       "endDate": "2017-12T00:00-0500",
       "details": [
-        "Developed React-based management features to enhance site admin experience",
-        "Created an event-driven email and push notification API in PHP, boosting user engagement",
-        "Contributed to Cloudup web application improvements using JavaScript",
+        "Developed site admin management features for WordPress.com using React, JavaScript, HTML, and CSS, to enhance usability and performance",
+        "Created event-driven email and push notification framework and API, enabling user engagement improvements and increased customer success",
+        "Implemented usability improvements for Cloudup using JavaScript and Node",
         "Conducted regular code reviews, ensuring maintainable code and adherence to best practices"
       ]
     },
@@ -61,34 +65,37 @@
       "startDate": "2007-03T00:00-0500",
       "endDate": "2014-10T00:00-0400",
       "details": [
-        "Led front-end development and UX design for multiple product lines",
-        "Developed rich client applications in C#/.NET and web applications in JavaScript",
+        "Led front-end development and UX design for multiple security product lines, promoting consistency and usability",
+        "Maintained UI design guidelines, including a focus on localization and accessibility",
+        "Architected and delivered desktop applications in C# and web applications in JavaScript",
         "Formed and led new user experience team, hiring initial team members"
       ]
     },
     {
-      "title": "Tech Lead / Software Development Manager",
+      "title": "Tech Lead / Software Engineering Manager",
       "company": "Lenel Systems International",
       "location": "Pittsford, NY",
       "startDate": "2003-12T00:00-0500",
       "endDate": "2007-03T00:00-0500",
       "details": [
-        "Managed a team of front-end developers and led the creation of a JavaScript framework for web applications",
+        "Managed front-end team and led the creation of a JavaScript framework for security applications",
+        "Designed and implemented reusable UI components in HTML, CSS, and JavaScript, to improve consistency and developer efficiency",
         "Oversaw project scope, timelines, and deliverables in collaboration with product management",
-        "Promoted high quality code through regular code reviews",
+        "Promoted best practices, shared understanding, consistency, and maintainability through regular code reviews",
         "Supported team members through regular one-on-one meetings and performance reviews"
       ]
     },
     {
-      "title": "Tech Lead / Software Development Manager",
+      "title": "Tech Lead / Software Engineering Manager",
       "company": "Lenel Systems International",
       "location": "Pittsford, NY",
       "startDate": "2000-12T00:00-0500",
       "endDate": "2003-12T00:00-0500",
       "details": [
-        "Led development of a service-oriented architecture for next-generation applications in C#/.NET",
-        "Managed a team of six developers focused on Windows applications in C++",
-        "Established UI design guidelines and trained team members"
+        "Led development of service-oriented architecture for security management applications implemented in C#",
+        "Managed a team of developers focused on Windows-based security management applications in C++",
+        "Architected and implemented LDAP and WMI integration APIs, enabling third-party integrations",
+        "Established UI design guidelines and trained team on best practices"
       ]
     },
     {
@@ -99,31 +106,15 @@
       "endDate": "2000-12T00:00-0500",
       "details": [
         "Implemented custom messaging delivery system in C++",
-        "Implemented Java-based license server, with web-based admin and clients written in C++ and Java",
+        "Implemented Java-based license server, with web-based admin and clients written in C++ and Java, enabling per-seat and capacity-based licensing of product features",
         "Implemented web-based visitor and access control management applications",
-        "Led localization effort for the OnGuard product line, training the team on best practices"
-      ]
-    },
-    {
-      "title": "Software Engineer",
-      "company": "POMCO Group",
-      "location": "Syracuse, NY",
-      "startDate": "1995-06T00:00-0400",
-      "endDate": "1996-08T00:00-0400",
-      "details": [
-        "Developed claim processing workflow in C++, improving operator efficiency and reducing processing errors",
-        "Developed corporate web site using HTML, CSS and Perl"
+        "Led localization effort for the OnGuard security product line and trained team on best practices"
       ]
     }
   ],
   "skills": {
-    "Languages": ["TypeScript", "JavaScript", "HTML", "CSS", "PHP"],
-    "Programming Paradigms": [
-      "Object-Oriented",
-      "Procedural",
-      "Declarative",
-      "Functional"
-    ],
+    "Languages": ["TypeScript", "JavaScript", "HTML", "CSS", "PHP", "C#"],
+    "Programming Paradigms": ["Object-Oriented", "Functional", "Procedural", "Declarative"],
     "Frameworks": [
       "React",
       "WordPress",
