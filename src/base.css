@@ -32,6 +32,10 @@ a {
   text-decoration-style: dotted;
   text-decoration-thickness: 1px;
 
+  svg.icon {
+    fill: var(--link-color);
+  }
+
   &:hover {
     text-decoration-style: solid;
     text-decoration-thickness: 2px;
@@ -40,6 +44,11 @@ a {
   &:visited {
     color: var(--visited-link-color);
   }
+}
+
+/* Nesting this under &:visited above doesn't work; not sure if it should */
+a:visited svg.icon {
+  fill: var(--visited-link-color);
 }
 
 body > nav {

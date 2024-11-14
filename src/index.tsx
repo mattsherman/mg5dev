@@ -11,29 +11,27 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
       <ul class="home-page-icons">
         {hasPosts && (
           <li>
-            <a href="/blog" class="home-page-blog-link">
+            <a href="/blog">
+              <data.comp.icons.BlogIcon />
               Blog
             </a>
           </li>
         )}
         <li>
-          <a href="/resume" class="home-page-resume-link">
+          <a href="/resume">
+            <data.comp.icons.ResumeIcon />
             Résumé
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/mattsherman"
-            class="home-page-github-link"
-          >
+          <a href="https://github.com/mattsherman">
+            <data.comp.icons.GitHubIcon />
             GitHub
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/matthewsherman/"
-            class="home-page-linkedin-link"
-          >
+          <a href="https://www.linkedin.com/in/matthewsherman/">
+            <data.comp.icons.LinkedInIcon />
             LinkedIn
           </a>
         </li>

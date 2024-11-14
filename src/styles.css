@@ -95,26 +95,9 @@ body > footer {
 
       text-transform: uppercase;
 
-      &::before {
-        display: block;
+      .icon {
         width: 5rem;
         height: 5rem;
-      }
-
-      &.home-page-blog-link::before {
-        content: url(static/icons/news-line.svg);
-      }
-
-      &.home-page-resume-link::before {
-        content: url(static/icons/file-text-line.svg);
-      }
-
-      &.home-page-github-link::before {
-        content: url(static/icons/github-line.svg);
-      }
-
-      &.home-page-linkedin-link::before {
-        content: url(static/icons/linkedin-box-line.svg);
       }
     }
   }
