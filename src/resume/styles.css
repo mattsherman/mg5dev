@@ -1,7 +1,7 @@
 /* Variables cannot be used in url(), so hardcode version */
-@import url("/v1/reset.css");
-@import url("/v1/fonts.css");
-@import url("/v1/base.css");
+@import url("/v2/reset.css");
+@import url("/v2/fonts.css");
+@import url("/v2/base.css");
 
 @media print {
   @page {
