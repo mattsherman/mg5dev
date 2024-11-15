@@ -99,6 +99,14 @@ body > footer {
         width: 5rem;
         height: 5rem;
       }
+
+      &:visited {
+        color: var(--link-color);
+      }
+    }
+
+    a:visited svg.icon {
+      fill: var(--link-color);
     }
   }
 }
