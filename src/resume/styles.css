@@ -81,6 +81,10 @@ body > nav {
 
     text-decoration-line: none;
 
+    svg.icon {
+      fill: inherit;
+    }
+
     &:hover {
       text-decoration-line: underline;
     }
@@ -88,6 +92,10 @@ body > nav {
     &:visited {
       color: inherit;
     }
+  }
+
+  a:visited svg.icon {
+    fill: inherit;
   }
 
   > header {
@@ -128,7 +136,18 @@ body > nav {
       }
 
       a {
+        display: inline-flex;
+
+        gap: 0.25em;
+        
+        align-items: center;
+
         text-wrap: nowrap;
+
+        .icon {
+          width: 1em;
+          height: 1em;
+        }
       }
 
       .email {

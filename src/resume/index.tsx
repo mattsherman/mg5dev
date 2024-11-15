@@ -34,12 +34,14 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
             href={`https://linkedin.com/in/${resume.personalInformation.linkedin}`}
             class="linkedin"
           >
+            <data.comp.icons.LinkedInIcon />
             {`linkedin.com/in/${resume.personalInformation.linkedin}`}
           </a>
           <a
             href={`https://github.com/${resume.personalInformation.github}`}
             class="github"
           >
+            <data.comp.icons.GitHubIcon />
             {`github.com/${resume.personalInformation.github}`}
           </a>
         </address>
