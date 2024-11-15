@@ -36,8 +36,9 @@ a {
 
   color: var(--link-color);
 
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 
   svg.icon {
     fill: var(--link-color);
@@ -45,7 +46,6 @@ a {
 
   &:hover {
     text-decoration-style: solid;
-    text-decoration-thickness: 2px;
   }
 
   &:visited {
