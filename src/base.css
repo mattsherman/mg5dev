@@ -4,13 +4,16 @@
   --base-font-family: "iA Writer Quattro", monospace;
   --base-font-size: 13pt;
 
-  --base-color: black;
-  --base-background-color: white;
+  --base-color: #333;
+  --base-background-color: #f5f5f5;
 
   --base-secondary-color: hsl(from var(--base-color) h s calc(l + 33));
 
-  --link-color: blue;
-  --visited-link-color: purple;
+  --header-color: #6a0dad;
+  --header-secondary-color: hsl(from var(--header-color) h s calc(l + 10));
+
+  --link-color: #c34100;
+  --visited-link-color: #8a2c00;
 
   --horizontal-list-separator: "•";
   --horizontal-list-separator-margin: 0 0.5em;
@@ -22,6 +25,10 @@ html {
 
   color: var(--base-color);
   background: var(--base-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
 }
 
 a {

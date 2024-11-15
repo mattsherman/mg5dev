@@ -103,6 +103,10 @@ body > footer {
   }
 }
 
+.post-metadata {
+  color: var(--header-secondary-color);
+}
+
 .post-list-item {
   margin-bottom: 5rem;
 
