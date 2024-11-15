@@ -94,7 +94,7 @@ body > nav {
     .title {
       font-size: 1.25rem;
 
-      color: var(--base-secondary-color);
+      color: var(--header-secondary-color);
     }
 
     > address {
