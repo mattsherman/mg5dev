@@ -21,15 +21,20 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
               href={`mailto:${resume.personalInformation.email}`}
               class="email"
             >
+              <data.comp.icons.EmailIcon />
               {resume.personalInformation.email}
             </a>
           )}
           {resume.personalInformation.phone && (
             <a href={`tel:${resume.personalInformation.phone}`} class="phone">
+              <data.comp.icons.PhoneIcon />
               {resume.personalInformation.phone}
             </a>
           )}
-          <span class="location">{resume.personalInformation.location}</span>
+          <span class="location">
+            <data.comp.icons.LocationIcon />
+            {resume.personalInformation.location}
+          </span>
           <a
             href={`https://linkedin.com/in/${resume.personalInformation.linkedin}`}
             class="linkedin"
