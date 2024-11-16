@@ -3,6 +3,12 @@ import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import feed from "lume/plugins/feed.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
+import prism from "lume/plugins/prism.ts";
+
+// Additional prism language support
+import "npm:prismjs@1.29.0/components/prism-typescript.js";
+import "npm:prismjs@1.29.0/components/prism-markup-templating.js";
+import "npm:prismjs@1.29.0/components/prism-php.js";
 
 import cacheBusting from "lume/middlewares/cache_busting.ts";
 
@@ -24,6 +30,15 @@ site.loadAssets([".css"]);
 site.use(jsx());
 
 site.use(date());
+
+site.use(
+  prism({
+    theme: {
+      name: "okaidia",
+      path: "/prism-code-themes/okaidia.css",
+    },
+  })
+);
 
 site.use(
   feed({

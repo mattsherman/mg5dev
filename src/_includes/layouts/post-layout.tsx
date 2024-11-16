@@ -14,6 +14,10 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
           href={`/${data.cacheBusterVersion}/styles.css`}
         />
         <link
+          rel="stylesheet"
+          href={`/${data.cacheBusterVersion}/prism-code-themes/okaidia.css`}
+        />
+        <link
           rel="alternate"
           type="application/rss+xml"
           href="/posts.rss"
