@@ -1,4 +1,4 @@
-export const title = "Matt Sherman";
+export const title = "mg5.dev";
 export const layout = "layouts/home-page-layout.tsx";
 
 export default (data: Lume.Data, _helpers: Lume.Helpers) => {
