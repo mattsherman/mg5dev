@@ -53,9 +53,13 @@ body > main {
   }
 
   p {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 
     text-wrap: pretty;
+  }
+
+  pre[class *= language-] {
+    margin: 1.5rem 0;
   }
 }
 
