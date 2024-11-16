@@ -61,6 +61,10 @@ body > main {
   pre[class *= language-] {
     margin: 1.5rem 0;
   }
+
+  div.cp_embed_wrapper {
+    margin: 1.5rem 0;
+  }
 }
 
 body > footer {
