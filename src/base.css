@@ -44,7 +44,8 @@ a {
     fill: var(--link-color);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration-style: solid;
   }
 
