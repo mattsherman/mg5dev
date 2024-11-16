@@ -1,8 +1,10 @@
-import cacheBusting from "lume/middlewares/cache_busting.ts";
+import lume from "lume/mod.ts";
+
 import date from "lume/plugins/date.ts";
 import feed from "lume/plugins/feed.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
-import lume from "lume/mod.ts";
+
+import cacheBusting from "lume/middlewares/cache_busting.ts";
 
 Deno.env.set("TZ", "America/New_York");
 
