@@ -11,11 +11,11 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="stylesheet"
-          href={`/${data.cacheBusterVersion}/styles.css`}
+          href={`/${data.cacheBusterVersion}/prism-code-themes/okaidia.css`}
         />
         <link
           rel="stylesheet"
-          href={`/${data.cacheBusterVersion}/prism-code-themes/okaidia.css`}
+          href={`/${data.cacheBusterVersion}/styles.css`}
         />
         <link
           rel="alternate"
