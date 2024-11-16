@@ -1,7 +1,7 @@
 export const title = "Matt Sherman";
 export const layout = "layouts/home-page-layout.tsx";
 
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
+export default (data: Lume.Data, _helpers: Lume.Helpers) => {
   const { search } = data;
 
   const hasPosts = search.pages("type=post").length > 0;
