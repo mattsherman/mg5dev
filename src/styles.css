@@ -70,10 +70,9 @@ body > footer {
 
 .home-page-icons {
   display: flex;
+  flex-direction: column;
 
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
+  align-items: stretch;
 
   padding-inline-start: 0;
 
@@ -81,32 +80,43 @@ body > footer {
 
   gap: 1rem;
 
-  justify-content: center;
-
   li {
     a {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
 
-      min-width: 150px;
+      padding: 0.5em;
+      gap: 0.5em;
 
       font-size: 1.5rem;
 
       text-transform: uppercase;
 
+      background: var(--link-color);
+      color: var(--base-background-color);
+
+      border-radius: 5px;
+
       .icon {
-        width: 5rem;
-        height: 5rem;
+        width: 2em;
+        height: 2em;
+
+        fill: var(--base-background-color);
+      }
+
+      &:hover,
+      &:focus {
+        background: var(--visited-link-color);
       }
 
       &:visited {
-        color: var(--link-color);
+        color: var(--base-background-color);
       }
     }
 
     a:visited svg.icon {
-      fill: var(--link-color);
+      fill: var(--base-background-color);
     }
   }
 }
