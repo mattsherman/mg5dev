@@ -1,5 +1,5 @@
 export const title = "Matt Sherman";
-export const layout = "layouts/layout.tsx";
+export const layout = "layouts/home-page-layout.tsx";
 
 export default (data: Lume.Data, helpers: Lume.Helpers) => {
   const { search } = data;
