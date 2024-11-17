@@ -6,7 +6,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
 
   const PostListItem = comp.PostListItem;
 
-  const posts = search.pages("type=post");
+  const posts = search.pages("type=post", "date=desc");
 
   return (
     <>
