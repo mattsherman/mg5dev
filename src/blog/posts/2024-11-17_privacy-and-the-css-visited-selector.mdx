@@ -1,0 +1,66 @@
+---
+title: Privacy and the CSS :visited Selector 
+date: 2024-11-17T00:00:00-0500
+excerpt: I recently learned about some long-standing restrictions on styling using the CSS :visited selector.
+---
+
+I recently learned about some [long-standing restrictions on styling using the CSS `:visited`
+selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector).
+Now, in my defense, all of my web development work my entire career has been in the context of
+web apps, where we don't typically style links based on whether they have been visited.
+
+So, I never came across this issue until I was working on the styling for blog posts such as
+this one, on [mg5.dev](https://mg5.dev"). Since a blog post is a document, and not an
+application, I wanted to preserve the default
+[affordance](https://en.wikipedia.org/wiki/Affordance") of styling visited links
+differently from unvisited links. But, I didn't want to distinguish based on color, so my
+initial thought was to use a different `text-decoration-style`.
+
+```css
+a {
+  text-decoration-style: solid;
+
+  &:visited {
+    text-decoration-style: dotted;
+  }
+}
+```
+
+I thought this would be a nice subtle way of deemphasizing visited links. But, when I tried it,
+it didn't work?! Lots of fruitless debugging ensued. I tried different browsers, different syntaxes
+(thinking that perhaps there was some detail about using pseudo selectors in
+[CSS nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) that I
+didn't know, since I've just recently started using native CSS nesting). Nothing worked!
+
+<comp.CodePenEmbed
+  user="theminjam"
+  userRealName="Matt Sherman"
+  slug="MWNRqdz"
+  title="Privacy and the CSS :visited selector"
+  height="500"
+/>
+
+I finally found the reason! It turns out that way back when, before 2010, the styling of
+visited links was used to track users' browsing history and leak a lot of information
+about users. So, the CSS `:visited` pseudo-class was restricted to only allow a limited number of
+properties to be styled ([from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector#limits_to_visited_link_styles)):
+
+- `color`
+- `background-color`
+- `border-color`
+- `column-rule-color`
+- `outline-color`
+- `text-decoration-color`
+- `text-emphasis-color`
+- The color parts of `fill` and `stroke`
+
+The basic idea is that you can't style visited links in a way that would potentially alter the
+layout of the page (since then `window.getComputedStyle()` could be used to detect whether a
+link had been visited).
+
+This makes perfect sense! I had never thought about this specific concern before, but it's a
+great example of the delicate balance between functionality and privacy. Even seemingly
+harmless features can leak user information. Sure, the designer in me is disappointed that
+I don't have absolute freedom to style visited links in any way I want. But, the privacy advocate
+in me is glad that the designers and developers of the web platform carefully consider the privacy
+implications of every feature and put limitations in place to protect users.
