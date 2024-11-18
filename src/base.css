@@ -66,6 +66,19 @@ body > nav {
 
   text-transform: uppercase;
 
+  a {
+    display: inline-flex;
+
+    gap: 0.25em;
+
+    align-items: center;
+
+    .icon {
+      width: 1em;
+      height: 1em;
+    }
+  }
+
   .header-breadcrumb {
     flex: 1;
 
