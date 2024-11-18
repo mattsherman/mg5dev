@@ -25,13 +25,17 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
       <nav>
         <ol class="header-breadcrumb horizontal-list">
           <li>
-            <a href="/">mg5.dev</a>
+            <a href="/">
+              <data.comp.icons.HomeIcon />
+              mg5.dev
+            </a>
           </li>
         </ol>
         <div class="header-secondary">
           <a
             href={`/${data.cacheBusterVersion}/static/matt-sherman-resume.pdf`}
           >
+            <data.comp.icons.PdfIcon />
             View PDF
           </a>
         </div>

@@ -35,10 +35,16 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <nav>
           <ol class="header-breadcrumb horizontal-list">
             <li>
-              <a href="/">mg5.dev</a>
+              <a href="/">
+                <data.comp.icons.HomeIcon />
+                mg5.dev
+              </a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog">
+                <data.comp.icons.BlogIcon />
+                Blog
+              </a>
             </li>
           </ol>
         </nav>
