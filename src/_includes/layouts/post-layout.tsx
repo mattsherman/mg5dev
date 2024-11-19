@@ -13,6 +13,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
           rel="stylesheet"
           href={`/${data.cacheBusterVersion}/prism-code-themes/okaidia.css`}
         />
+        <data.comp.BaseStylesLinks />
         <link
           rel="stylesheet"
           href={`/${data.cacheBusterVersion}/styles.css`}

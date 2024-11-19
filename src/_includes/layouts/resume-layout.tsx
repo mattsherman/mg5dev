@@ -3,6 +3,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <data.comp.BaseStylesLinks />
       <link
         rel="stylesheet"
         href={`/${data.cacheBusterVersion}/resume/styles.css`}
