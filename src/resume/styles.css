@@ -71,7 +71,8 @@ body > nav {
     margin-bottom: .5rem;
   }  
 
-  a {
+  a,
+  .location {
     color: inherit;
 
     text-decoration-line: none;
