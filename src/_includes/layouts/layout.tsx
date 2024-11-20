@@ -24,7 +24,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
         <nav>
           <ol class="header-breadcrumb horizontal-list">
             <li>
-              <a href="/">
+              <a href="/" class="icon-and-text-link">
                 <data.comp.icons.HomeIcon />
                 mg5.dev
               </a>

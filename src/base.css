@@ -40,10 +40,6 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 
-  svg.icon {
-    fill: var(--link-color);
-  }
-
   &:hover,
   &:focus {
     text-decoration-style: solid;
@@ -54,11 +50,6 @@ a {
   }
 }
 
-/* Nesting this under &:visited above doesn't work; not sure if it should */
-a:visited svg.icon {
-  fill: var(--visited-link-color);
-}
-
 body > nav {
   display: flex;
 
@@ -66,24 +57,32 @@ body > nav {
 
   text-transform: uppercase;
 
-  a {
-    display: inline-flex;
-
-    gap: 0.25em;
-
-    align-items: center;
-
-    .icon {
-      width: 1em;
-      height: 1em;
-    }
-  }
-
   .header-breadcrumb {
     flex: 1;
 
     --horizontal-list-separator: "▸";
   }
+}
+
+.icon-and-text-link {
+  display: inline-flex;
+
+  gap: 0.25em;
+
+  align-items: center;
+
+  .icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  svg.icon {
+    fill: var(--link-color);
+  }
+}
+
+.icon-and-text-link:visited svg.icon {
+  fill: var(--visited-link-color);
 }
 
 .horizontal-list {
