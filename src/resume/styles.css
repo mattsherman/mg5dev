@@ -243,8 +243,20 @@ body > nav {
 
     column-gap: 1rem;
 
+    @media (max-width: 800px) {
+      grid-template-columns: auto;
+
+      *:nth-child(2n) {
+        margin-bottom: 1rem;
+      }
+    }
+
     > .category {
       grid-column: category;
+
+      @media (max-width: 800px) {
+        grid-column: auto;
+      }
 
       color: var(--base-secondary-color);
   
@@ -255,6 +267,10 @@ body > nav {
   
     > .skills {
       grid-column: skills;
+
+      @media (max-width: 800px) {
+        grid-column: auto;
+      }
     }
 
     .skill:not(:last-child)::after {
