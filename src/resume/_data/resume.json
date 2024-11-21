@@ -114,7 +114,12 @@
   ],
   "skills": {
     "Languages": ["TypeScript", "JavaScript", "HTML", "CSS", "PHP", "C#"],
-    "Programming Paradigms": ["Object-Oriented", "Functional", "Procedural", "Declarative"],
+    "Programming paradigms": [
+      "Object-Oriented",
+      "Functional",
+      "Procedural",
+      "Declarative"
+    ],
     "Frameworks": [
       "React",
       "WordPress",
@@ -127,7 +132,7 @@
     "Testing": ["Jest", "Playwright", "PHPUnit"],
     "Tools": ["Git", "GitHub", "VS Code", "Docker", "MySQL"],
     "Methodologies": ["Agile", "Scrum", "Kanban"],
-    "User Experience": [
+    "User experience": [
       "UX Design",
       "Localization",
       "Internationalization",
