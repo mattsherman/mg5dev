@@ -116,9 +116,9 @@ body > nav {
       @media (max-width: 700px) {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-          "location location"
-          "email linkedin"
-          "phone github";
+          "location linkedin"
+          "email github"
+          "phone .";
       }
 
       @media (max-width: 500px) {
