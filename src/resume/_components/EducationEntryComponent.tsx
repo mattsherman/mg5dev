@@ -1,4 +1,14 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
+interface EducationEntryData extends Lume.Data {
+  degree: string;
+  major: string;
+  institution: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  note: string;
+}
+
+export default (data: EducationEntryData, helpers: Lume.Helpers) => {
   const { degree, major, institution, location, startDate, endDate, note } =
     data;
   const { date } = helpers;

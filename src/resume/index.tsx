@@ -3,8 +3,12 @@ export const layout = "layouts/resume-layout.tsx";
 
 import { Resume } from "./types.ts";
 
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
-  const { comp, resume }: { comp: any; resume: Resume } = data;
+interface ResumeData extends Lume.Data {
+  resume: Resume;
+}
+
+export default (data: ResumeData, _helpers: Lume.Helpers) => {
+  const { comp, resume } = data;
 
   const JobPositionComponent = comp.JobPositionComponent;
   const SkillsListComponent = comp.SkillsListComponent;

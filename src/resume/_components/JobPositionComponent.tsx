@@ -1,21 +1,14 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
-  const {
-    title,
-    company,
-    location,
-    startDate,
-    endDate,
-    details,
-    skills,
-  }: {
-    title: string;
-    company: string;
-    location: string;
-    startDate: string;
-    endDate: string;
-    details: string[];
-    skills: string[];
-  } = data;
+interface JobPositionData extends Lume.Data {
+  title: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  details: string[];
+}
+
+export default (data: JobPositionData, helpers: Lume.Helpers) => {
+  const { title, company, location, startDate, endDate, details } = data;
   const { date } = helpers;
 
   const DATE_FORMAT = "yyyy";
