@@ -183,12 +183,12 @@ body > nav {
         "title location date-range"
         "subtitle . .";
 
-      @media (max-width: 500px) {
+      @media (max-width: 800px) {
         grid-template-columns: 1fr auto;
         grid-template-areas:
           "title title"
-          "subtitle subtitle"
-          "location date-range";
+          "location date-range"
+          "subtitle subtitle";
       }
   
       .title {
