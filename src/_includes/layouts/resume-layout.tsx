@@ -1,4 +1,4 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => (
+export default (data: Lume.Data, _helpers: Lume.Helpers) => (
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
