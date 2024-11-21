@@ -120,15 +120,7 @@
       "Procedural",
       "Declarative"
     ],
-    "Frameworks": [
-      "React",
-      "WordPress",
-      "WooCommerce",
-      "Redux",
-      "Node",
-      "Deno",
-      ".NET Framework"
-    ],
+    "Frameworks": ["React", "Redux", "Node", "Deno", "WordPress", "WooCommerce", ".NET"],
     "Testing": ["Jest", "Playwright", "PHPUnit"],
     "Tools": ["Git", "GitHub", "VS Code", "Docker", "MySQL"],
     "Methodologies": ["Agile", "Scrum", "Kanban"],
