@@ -75,7 +75,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
       </section>
       <section class="skills-section">
         <h2>Skills</h2>
-        <dl>
+        <dl class="skills-categories-list">
           {Object.keys(resume.skills).map((key, index) => (
             <SkillsListComponent
               key={index}

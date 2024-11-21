@@ -3,7 +3,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
     data;
 
   return (
-    <div class="skills-list">
+    <>
       <dt class="category">{categoryName}</dt>
       <dd class="skills">
         {skills.map((skill, index) => (
@@ -12,6 +12,6 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
           </span>
         ))}
       </dd>
-    </div>
+    </>
   );
 };

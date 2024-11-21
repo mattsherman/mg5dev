@@ -235,13 +235,17 @@ body > nav {
       color: var(--base-secondary-color);
     }
   }
-  
-  .skills-list {
-    > * {
-      display: inline;
-    }
-  
+ 
+  .skills-categories-list {
+    display: grid;
+    grid-template-columns: [category] auto [skills] 1fr;
+    grid-template-rows: auto;
+
+    column-gap: 1rem;
+
     > .category {
+      grid-column: category;
+
       color: var(--base-secondary-color);
   
       &::after {
@@ -249,6 +253,10 @@ body > nav {
       }
     }
   
+    > .skills {
+      grid-column: skills;
+    }
+
     .skill:not(:last-child)::after {
       content: ", ";
     }
