@@ -1,4 +1,8 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
+interface PostLayoutData extends Lume.Data {
+  HUMAN_DATE_FORMAT: string;
+}
+
+export default (data: PostLayoutData, helpers: Lume.Helpers) => {
   const { HUMAN_DATE_FORMAT } = data;
   const { date } = helpers;
 

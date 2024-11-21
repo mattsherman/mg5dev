@@ -1,4 +1,8 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => (
+interface LayoutData extends Lume.Data {
+  cacheBusterVersion: string;
+}
+
+export default (data: LayoutData, _helpers: Lume.Helpers) => (
   <html lang="en">
     <head>
       <meta charset="UTF-8" />

@@ -1,4 +1,7 @@
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
+interface PostListItemData extends Lume.Data {
+  post: Lume.Data;
+}
+export default (data: PostListItemData, helpers: Lume.Helpers) => {
   const { HUMAN_DATE_FORMAT, post } = data;
   const { date, url } = helpers;
 
