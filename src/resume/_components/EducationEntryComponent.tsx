@@ -22,6 +22,8 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
         <p class="subtitle">
           {degree}, {major}
         </p>
+
+        <p class="location">{location}</p>
       </header>
       <p>{note}</p>
     </article>

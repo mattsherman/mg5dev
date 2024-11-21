@@ -176,17 +176,19 @@ body > nav {
   .education-entry {
     > header {
       display: grid;
-      grid-template-columns: 1fr auto;
+      
+      grid-template-columns: 2fr 0.5fr 0.5fr;
       grid-template-rows: auto;
       grid-template-areas:
-        "title date-range"
-        "subtitle subtitle";
-  
+        "title location date-range"
+        "subtitle . .";
+
       @media (max-width: 500px) {
         grid-template-columns: 1fr auto;
         grid-template-areas:
           "title title"
-          "subtitle date-range";
+          "subtitle subtitle"
+          "location date-range";
       }
   
       .title {
@@ -195,13 +197,21 @@ body > nav {
   
       .date-range {
         grid-area: date-range;
-  
+ 
+        text-align: end;
+
         color: var(--base-secondary-color);
       }
   
+      .location {
+        grid-area: location;
+  
+        color: var(--base-secondary-color);
+      }
+
       .subtitle {
         grid-area: subtitle;
-  
+
         color: var(--base-secondary-color);
       }
     }

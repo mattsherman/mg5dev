@@ -36,7 +36,7 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => {
           <time datetime={endDate}>{formattedEndDate}</time>
         </p>
 
-        <p class="subtitle">{location}</p>
+        <p class="location">{location}</p>
       </header>
       <ul class="details">
         {details.map((detail: string, index: number) => (
