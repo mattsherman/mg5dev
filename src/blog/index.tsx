@@ -1,7 +1,7 @@
 export const title = "mg5.dev - Blog";
 export const layout = "layouts/layout.tsx";
 
-export default (data: Lume.Data, helpers: Lume.Helpers) => {
+export default (data: Lume.Data, _helpers: Lume.Helpers) => {
   const { comp, search } = data;
 
   const PostListItem = comp.PostListItem;
