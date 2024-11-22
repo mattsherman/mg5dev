@@ -1,13 +1,6 @@
-interface PostLayoutData extends Lume.Data {
-  HUMAN_DATE_FORMAT: string;
-}
+interface PostLayoutData extends Lume.Data {}
 
-export default (data: PostLayoutData, helpers: Lume.Helpers) => {
-  const { HUMAN_DATE_FORMAT } = data;
-  const { date } = helpers;
-
-  const formattedDate = date(data.date, HUMAN_DATE_FORMAT);
-
+export default (data: PostLayoutData, _helpers: Lume.Helpers) => {
   return (
     <html lang="en">
       <head>
@@ -56,22 +49,7 @@ export default (data: PostLayoutData, helpers: Lume.Helpers) => {
         <main>
           <header>
             <h1>{data.title}</h1>
-            <ul class="post-metadata horizontal-list">
-              <li>
-                <span class="icon-and-text">
-                  <data.comp.icons.DateIcon />
-                  <time datetime={data.date.toISOString()}>
-                    {formattedDate}
-                  </time>
-                </span>
-              </li>
-              <li>
-                <span class="icon-and-text">
-                  <data.comp.icons.AuthorIcon />
-                  <address>{data.author}</address>
-                </span>
-              </li>
-            </ul>
+            <data.comp.PostMetadata post={data} />
           </header>
 
           {data.children}
