@@ -17,12 +17,12 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
         href="/posts.json"
         title="JSON Feed"
       />
-      <title>{data.title}</title>
+      <title>mg5.dev - Home</title>
     </head>
     <body>
       <main>
         <header>
-          <h1>{data.title}</h1>
+          <h1>mg5.dev</h1>
         </header>
 
         {data.children}
