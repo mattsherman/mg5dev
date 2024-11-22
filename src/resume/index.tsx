@@ -23,7 +23,7 @@ export default (data: ResumeData, _helpers: Lume.Helpers) => {
           {resume.personalInformation.email && (
             <a
               href={`mailto:${resume.personalInformation.email}`}
-              class="email icon-and-text-link"
+              class="email icon-and-text"
             >
               <data.comp.icons.EmailIcon />
               {resume.personalInformation.email}
@@ -32,26 +32,26 @@ export default (data: ResumeData, _helpers: Lume.Helpers) => {
           {resume.personalInformation.phone && (
             <a
               href={`tel:${resume.personalInformation.phone}`}
-              class="phone icon-and-text-link"
+              class="phone icon-and-text"
             >
               <data.comp.icons.PhoneIcon />
               {resume.personalInformation.phone}
             </a>
           )}
-          <span class="location icon-and-text-link">
+          <span class="location icon-and-text">
             <data.comp.icons.LocationIcon />
             {resume.personalInformation.location}
           </span>
           <a
             href={`https://linkedin.com/in/${resume.personalInformation.linkedin}`}
-            class="linkedin icon-and-text-link"
+            class="linkedin icon-and-text"
           >
             <data.comp.icons.LinkedInIcon />
             {`linkedin.com/in/${resume.personalInformation.linkedin}`}
           </a>
           <a
             href={`https://github.com/${resume.personalInformation.github}`}
-            class="github icon-and-text-link"
+            class="github icon-and-text"
           >
             <data.comp.icons.GitHubIcon />
             {`github.com/${resume.personalInformation.github}`}

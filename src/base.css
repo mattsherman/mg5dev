@@ -64,7 +64,7 @@ body > nav {
   }
 }
 
-.icon-and-text-link {
+.icon-and-text {
   display: inline-flex;
 
   gap: 0.25em;
@@ -81,7 +81,13 @@ body > nav {
   }
 }
 
-.icon-and-text-link:visited svg.icon {
+a.icon-and-text {
+  svg.icon {
+    fill: var(--link-color);
+  }
+}
+
+a.icon-and-text:visited svg.icon {
   fill: var(--visited-link-color);
 }
 

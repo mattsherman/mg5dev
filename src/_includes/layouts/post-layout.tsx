@@ -40,13 +40,13 @@ export default (data: PostLayoutData, helpers: Lume.Helpers) => {
         <nav>
           <ol class="header-breadcrumb horizontal-list">
             <li>
-              <a href="/" class="icon-and-text-link">
+              <a href="/" class="icon-and-text">
                 <data.comp.icons.HomeIcon />
                 mg5.dev
               </a>
             </li>
             <li>
-              <a href="/blog" class="icon-and-text-link">
+              <a href="/blog" class="icon-and-text">
                 <data.comp.icons.BlogIcon />
                 Blog
               </a>

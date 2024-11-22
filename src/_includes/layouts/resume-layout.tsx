@@ -26,7 +26,7 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
       <nav>
         <ol class="header-breadcrumb horizontal-list">
           <li>
-            <a href="/" class="icon-and-text-link">
+            <a href="/" class="icon-and-text">
               <data.comp.icons.HomeIcon />
               mg5.dev
             </a>
@@ -35,7 +35,7 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
         <div class="header-secondary">
           <a
             href={`/${data.cacheBusterVersion}/static/matt-sherman-resume.pdf`}
-            class="icon-and-text-link"
+            class="icon-and-text"
           >
             <data.comp.icons.PdfIcon />
             View PDF
