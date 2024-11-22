@@ -27,7 +27,7 @@ export default (data: PostLayoutData, _helpers: Lume.Helpers) => {
           href="/posts.json"
           title="JSON Feed"
         />
-        <title>{data.title}</title>
+        <title>mg5.dev - {data.title}</title>
       </head>
       <body>
         <nav>
