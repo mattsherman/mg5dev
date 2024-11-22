@@ -18,9 +18,6 @@ export default (data: PostListItemData, helpers: Lume.Helpers) => {
       <div class="post-excerpt">
         <p>{post.excerpt}</p>
       </div>
-      <div>
-        <a href={postUrl}>Read post</a>
-      </div>
     </article>
   );
 };
