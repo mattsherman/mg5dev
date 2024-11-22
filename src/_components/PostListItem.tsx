@@ -2,11 +2,10 @@ interface PostListItemData extends Lume.Data {
   post: Lume.Data;
 }
 export default (data: PostListItemData, helpers: Lume.Helpers) => {
-  const { HUMAN_DATE_FORMAT, post } = data;
-  const { date, url } = helpers;
+  const { post } = data;
+  const { url } = helpers;
 
   const postUrl = url(post.url);
-  const formattedDate = date(post.date, HUMAN_DATE_FORMAT);
 
   return (
     <article class="post-list-item">
@@ -14,20 +13,7 @@ export default (data: PostListItemData, helpers: Lume.Helpers) => {
         <h2>
           <a href={postUrl}>{post.title}</a>
         </h2>
-        <ul class="post-metadata horizontal-list">
-          <li>
-            <span class="icon-and-text">
-              <data.comp.icons.DateIcon />
-              <time datetime={post.date.toISOString()}>{formattedDate}</time>
-            </span>
-          </li>
-          <li>
-            <span class="icon-and-text">
-              <data.comp.icons.AuthorIcon />
-              <address>{post.author}</address>
-            </span>
-          </li>
-        </ul>
+        <data.comp.PostMetadata post={post} />
       </header>
       <div class="post-excerpt">
         <p>{post.excerpt}</p>
