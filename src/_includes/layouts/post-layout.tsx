@@ -58,10 +58,18 @@ export default (data: PostLayoutData, helpers: Lume.Helpers) => {
             <h1>{data.title}</h1>
             <ul class="post-metadata horizontal-list">
               <li>
-                <time datetime={data.date.toISOString()}>{formattedDate}</time>
+                <span class="icon-and-text">
+                  <data.comp.icons.DateIcon />
+                  <time datetime={data.date.toISOString()}>
+                    {formattedDate}
+                  </time>
+                </span>
               </li>
               <li>
-                <address>{data.author}</address>
+                <span class="icon-and-text">
+                  <data.comp.icons.AuthorIcon />
+                  <address>{data.author}</address>
+                </span>
               </li>
             </ul>
           </header>

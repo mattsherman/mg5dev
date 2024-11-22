@@ -125,6 +125,8 @@ body > footer {
 }
 
 .post-metadata {
+  --horizontal-list-separator: "";
+
   color: var(--header-secondary-color);
 }
 
