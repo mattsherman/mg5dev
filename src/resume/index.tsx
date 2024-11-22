@@ -1,4 +1,4 @@
-export const title = "Matt Sherman - Résumé";
+export const title = "Matt Sherman's Résumé";
 export const layout = "layouts/resume-layout.tsx";
 
 import { Resume } from "./types.ts";
