@@ -82,6 +82,38 @@ body > footer {
   a {
     color: inherit;
   }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 5rem;
+
+    header {
+      grid-column: 1;
+
+      align-self: center;
+
+      margin: 0;
+    }
+
+    > * {
+      grid-column: 2;
+    }
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+
+      header {
+        grid-column: 1;
+
+        margin-bottom: 3rem;
+      }
+
+      > * {
+        grid-column: 1;
+      }
+  }
 }
 
 .home-page-icons {
