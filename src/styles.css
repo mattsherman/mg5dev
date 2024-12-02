@@ -109,30 +109,38 @@ body > footer {
 
       text-transform: uppercase;
 
-      background: var(--link-color);
-      color: var(--base-background-color);
-
-      border-radius: 5px;
-
       .icon {
-        width: 2em;
-        height: 2em;
+        width: 3em;
+        height: 3em;
+
+        padding: 0.20em;
+
+        border: 0.20em solid var(--base-background-color);
+        border-radius: 0.20em;
 
         fill: var(--base-background-color);
       }
+    }
 
-      &:hover,
-      &:focus {
-        background: var(--visited-link-color);
-      }
+    a:visited {
+      color: inherit;
 
-      &:visited {
-        color: var(--base-background-color);
+      svg.icon {
+        fill: inherit;
       }
     }
 
-    a:visited svg.icon {
-      fill: var(--base-background-color);
+    a:hover,
+    a:focus {
+      --highlight-color: white;
+
+      color: var(--highlight-color);
+
+      svg.icon {
+        border-color: var(--highlight-color);
+
+        fill: var(--highlight-color);
+      }
     }
   }
 }
