@@ -71,6 +71,19 @@ body > footer {
 
 /* Specific styles */
 
+.home-page {
+  color: var(--base-background-color);
+  background-color: var(--header-color);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
 .home-page-icons {
   display: flex;
   flex-direction: column;
