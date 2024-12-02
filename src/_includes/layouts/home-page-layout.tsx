@@ -19,7 +19,7 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
       />
       <title>mg5.dev - Home</title>
     </head>
-    <body>
+    <body class="home-page">
       <main>
         <header>
           <h1>mg5.dev</h1>
