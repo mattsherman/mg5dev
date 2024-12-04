@@ -86,7 +86,8 @@ body > nav {
   padding: 1rem;
 
   color: var(--base-background-color);
-  background-color: var(--header-color);
+  background-color: rgb(from var(--header-color) r g b / 0.95);
+  backdrop-filter: blur(2px);
 
   text-transform: uppercase;
 
