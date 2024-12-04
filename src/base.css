@@ -50,20 +50,6 @@ a {
   }
 }
 
-body > nav {
-  display: flex;
-
-  padding: 1rem;
-
-  text-transform: uppercase;
-
-  .header-breadcrumb {
-    flex: 1;
-
-    --horizontal-list-separator: "▸";
-  }
-}
-
 .icon-and-text {
   display: inline-flex;
 
@@ -89,6 +75,32 @@ a.icon-and-text {
 
 a.icon-and-text:visited svg.icon {
   fill: var(--visited-link-color);
+}
+
+body > nav {
+  display: flex;
+
+  padding: 1rem;
+
+  color: var(--base-background-color);
+  background-color: var(--header-color);
+
+  text-transform: uppercase;
+
+  .header-breadcrumb {
+    flex: 1;
+
+    --horizontal-list-separator: "▸";
+  }
+
+  a.icon-and-text,
+  a.icon-and-text:visited {
+    color: var(--base-background-color);
+
+    svg.icon {
+      fill: var(--base-background-color);
+    }
+  }
 }
 
 .horizontal-list {
