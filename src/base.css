@@ -78,6 +78,9 @@ a.icon-and-text:visited svg.icon {
 }
 
 body > nav {
+  position: sticky;
+  top: 0;
+
   display: flex;
 
   padding: 1rem;
