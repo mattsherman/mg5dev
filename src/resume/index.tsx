@@ -1,7 +1,7 @@
 export const title = "Matt Sherman's Résumé";
-export const layout = "layouts/resume-layout.tsx";
+export const layout = 'layouts/resume-layout.tsx';
 
-import { Resume } from "./types.ts";
+import { Resume } from './types.ts';
 
 interface ResumeData extends Lume.Data {
   resume: Resume;

@@ -1,6 +1,6 @@
-import Server from "lume/core/server.ts";
-import cacheBusting from "lume/middlewares/cache_busting.ts";
-import expires from "lume/middlewares/expires.ts";
+import Server from 'lume/core/server.ts';
+import cacheBusting from 'lume/middlewares/cache_busting.ts';
+import expires from 'lume/middlewares/expires.ts';
 
 const server = new Server({
   port: 8000,
@@ -13,4 +13,4 @@ server.use(expires());
 
 server.start();
 
-console.log("Listening on http://localhost:8000");
+console.log('Listening on http://localhost:8000');

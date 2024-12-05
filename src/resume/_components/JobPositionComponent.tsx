@@ -11,7 +11,7 @@ export default (data: JobPositionData, helpers: Lume.Helpers) => {
   const { title, company, location, startDate, endDate, details } = data;
   const { date } = helpers;
 
-  const DATE_FORMAT = "yyyy";
+  const DATE_FORMAT = 'yyyy';
 
   const formattedStartDate = date(startDate, DATE_FORMAT);
   const formattedEndDate = date(endDate, DATE_FORMAT);

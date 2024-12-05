@@ -1,9 +1,9 @@
-export const layout = "layouts/home-page-layout.tsx";
+export const layout = 'layouts/home-page-layout.tsx';
 
 export default (data: Lume.Data, _helpers: Lume.Helpers) => {
   const { search } = data;
 
-  const hasPosts = search.pages("type=post").length > 0;
+  const hasPosts = search.pages('type=post').length > 0;
 
   return (
     <>

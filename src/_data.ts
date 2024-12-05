@@ -1,1 +1,1 @@
-export const HUMAN_DATE_FORMAT = "HUMAN_DATE";
+export const HUMAN_DATE_FORMAT = 'HUMAN_DATE';

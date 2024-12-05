@@ -13,7 +13,7 @@ export default (data: EducationEntryData, helpers: Lume.Helpers) => {
     data;
   const { date } = helpers;
 
-  const DATE_FORMAT = "yyyy";
+  const DATE_FORMAT = 'yyyy';
 
   const formattedStartDate = date(startDate, DATE_FORMAT);
   const formattedEndDate = date(endDate, DATE_FORMAT);
