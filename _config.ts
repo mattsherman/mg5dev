@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 
 import date from "lume/plugins/date.ts";
+import esbuild from "lume/plugins/esbuild.ts";
 import feed from "lume/plugins/feed.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
 import mdx from "lume/plugins/mdx.ts";
@@ -27,6 +28,19 @@ site.data("cacheBusterVersion", `v${Date.now()}`);
 site.copy("static");
 
 site.loadAssets([".css"]);
+
+site.use(
+  esbuild({
+    options: {
+      bundle: true,
+      format: "esm",
+      keepNames: false,
+      minify: false,
+      platform: "browser",
+      target: "esnext",
+    },
+  })
+);
 
 site.use(jsx());
 
