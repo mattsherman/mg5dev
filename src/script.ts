@@ -5,9 +5,12 @@ function hookupPageNavAutoHide() {
   let lastScrollY = globalThis.scrollY;
 
   globalThis.addEventListener('scroll', () => {
-    const currentScrollY = globalThis.scrollY;
+    const maxScrollY =
+      document.documentElement.scrollHeight - globalThis.innerHeight;
+    const currentScrollY = Math.min(globalThis.scrollY, maxScrollY);
+
     const isScrollingDown =
-      currentScrollY > scrollThreshold && currentScrollY > lastScrollY;
+      currentScrollY > scrollThreshold && currentScrollY >= lastScrollY;
 
     if (isScrollingDown) {
       header?.classList.add('hidden');
