@@ -28,16 +28,7 @@ export default (data: LayoutData, _helpers: Lume.Helpers) => (
       <title>mg5.dev - {data.title}</title>
     </head>
     <body>
-      <nav>
-        <ol class="header-breadcrumb horizontal-list">
-          <li>
-            <a href="/" class="icon-and-text">
-              <data.comp.icons.HomeIcon />
-              mg5.dev
-            </a>
-          </li>
-        </ol>
-      </nav>
+      <data.comp.PageNav />
       <main>
         <header>
           <h1>{data.title}</h1>

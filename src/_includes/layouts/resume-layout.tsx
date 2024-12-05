@@ -27,16 +27,8 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
       <title>mg5.dev - {data.title}</title>
     </head>
     <body>
-      <nav>
-        <ol class="header-breadcrumb horizontal-list">
-          <li>
-            <a href="/" class="icon-and-text">
-              <data.comp.icons.HomeIcon />
-              mg5.dev
-            </a>
-          </li>
-        </ol>
-        <div class="header-secondary">
+      <data.comp.PageNav
+        secondary={
           <a
             href={`/${data.cacheBusterVersion}/static/matt-sherman-resume.pdf`}
             class="icon-and-text"
@@ -44,8 +36,8 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
             <data.comp.icons.PdfIcon />
             View PDF
           </a>
-        </div>
-      </nav>
+        }
+      />
       {data.children}
     </body>
   </html>
