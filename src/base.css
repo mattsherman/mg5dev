@@ -91,6 +91,8 @@ body > nav {
 
   text-transform: uppercase;
 
+  transition: transform 0.3s ease-in-out;
+
   .header-breadcrumb {
     flex: 1;
 
@@ -104,6 +106,10 @@ body > nav {
     svg.icon {
       fill: var(--base-background-color);
     }
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
   }
 }
 
