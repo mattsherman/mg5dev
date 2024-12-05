@@ -1,4 +1,11 @@
-export default (data: Lume.Data, _helpers: Lume.Helpers) => {
+import { ProxyComponents } from 'lume/core/source.ts';
+
+interface PageNavData extends Lume.Data {
+  breadcrumbs?: { url: string; text: string; Icon: ProxyComponents }[];
+  secondary?: ProxyComponents;
+}
+
+export default (data: PageNavData, _helpers: Lume.Helpers) => {
   const { breadcrumbs, secondary } = data;
 
   return (
@@ -10,6 +17,15 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => {
             mg5.dev
           </a>
         </li>
+        {breadcrumbs &&
+          breadcrumbs.map(({ url, text, Icon }) => (
+            <li>
+              <a href={url} class="icon-and-text">
+                <Icon />
+                {text}
+              </a>
+            </li>
+          ))}
       </ol>
       {secondary && <div class="header-secondary">{secondary}</div>}
     </nav>
