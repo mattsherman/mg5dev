@@ -5,6 +5,10 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <data.comp.BaseStylesLinks />
       <link rel="stylesheet" href={`/${data.cacheBusterVersion}/styles.css`} />
+      <script
+        src={`/${data.cacheBusterVersion}/script.js`}
+        type="module"
+      ></script>
       <link
         rel="alternate"
         type="application/rss+xml"

@@ -8,6 +8,10 @@ export default (data: Lume.Data, _helpers: Lume.Helpers) => (
         rel="stylesheet"
         href={`/${data.cacheBusterVersion}/resume/styles.css`}
       />
+      <script
+        src={`/${data.cacheBusterVersion}/script.js`}
+        type="module"
+      ></script>
       <link
         rel="alternate"
         type="application/rss+xml"
