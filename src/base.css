@@ -22,9 +22,6 @@
 html {
   font-family: var(--base-font-family);
   font-size: var(--base-font-size);
-
-  color: var(--base-color);
-  background: var(--base-background-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
