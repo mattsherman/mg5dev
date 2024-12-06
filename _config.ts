@@ -26,8 +26,7 @@ const site = lume({
 site.data('cacheBusterVersion', `v${Date.now()}`);
 
 site.copy('static');
-
-site.loadAssets(['.css', '.html']);
+site.copy(['.css', '.html']);
 
 site.use(
   esbuild({
