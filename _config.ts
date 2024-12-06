@@ -27,7 +27,7 @@ site.data('cacheBusterVersion', `v${Date.now()}`);
 
 site.copy('static');
 
-site.loadAssets(['.css']);
+site.loadAssets(['.css', '.html']);
 
 site.use(
   esbuild({
