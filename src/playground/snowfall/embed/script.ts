@@ -19,8 +19,8 @@ function createSnowflake(): HTMLElement {
   snowflake.innerHTML = '❄️';
 
   const left = getRandomInteger(0, 100);
-  const size = getRandomFloat(18, 20);
-  const fallDuration = getRandomFloat(9, 10);
+  const size = getRandomFloat(5, 20);
+  const fallDuration = 20 - size / 2 + getRandomFloat(-2, 2);
   const delay = getRandomFloat(0, 10);
   const sway1 = getRandomFloat(-1, 1);
   const sway2 = getRandomFloat(-1, 1);
@@ -47,4 +47,4 @@ function createSnowflakes(num: number): DocumentFragment {
   return fragment;
 }
 
-body.appendChild(createSnowflakes(1000));
+body.appendChild(createSnowflakes(2000));

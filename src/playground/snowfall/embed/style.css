@@ -33,6 +33,7 @@ body {
   opacity: 0.8;
 
   font-size: var(--size);
+  z-index: var(--size);
 
   animation: linear 1 forwards fall;
   animation-duration: var(--fall-duration);
