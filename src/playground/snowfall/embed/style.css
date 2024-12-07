@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: -20px;
  
-  opacity: 0.8;
+  opacity: 0.5;
 
   font-size: var(--size);
   z-index: var(--size);
