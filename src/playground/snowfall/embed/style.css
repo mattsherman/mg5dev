@@ -33,7 +33,7 @@ body {
   user-select: none;
 
   animation: linear 1 forwards fall;
-  animation-duration: 10s;
+  animation-duration: var(--fall-duration);
 
   will-change: transform;
 }
