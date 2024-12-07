@@ -21,7 +21,7 @@ function createSnowflake(): HTMLElement {
   const left = getRandomInteger(0, 100);
   const size = getRandomFloat(18, 20);
   const fallDuration = getRandomFloat(9, 10);
-  const delay = getRandomFloat(0, 1);
+  const delay = getRandomFloat(0, 10);
 
   snowflake.style.left = `${left}%`;
 
@@ -43,4 +43,4 @@ function createSnowflakes(num: number): DocumentFragment {
   return fragment;
 }
 
-body.appendChild(createSnowflakes(500));
+body.appendChild(createSnowflakes(1000));
