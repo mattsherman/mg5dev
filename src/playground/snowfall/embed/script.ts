@@ -22,12 +22,16 @@ function createSnowflake(): HTMLElement {
   const size = getRandomFloat(18, 20);
   const fallDuration = getRandomFloat(9, 10);
   const delay = getRandomFloat(0, 10);
+  const sway1 = getRandomFloat(-1, 1);
+  const sway2 = getRandomFloat(-1, 1);
 
   snowflake.style.left = `${left}%`;
 
   snowflake.style.setProperty('--size', `${size}px`);
   snowflake.style.setProperty('--fall-duration', `${fallDuration}s`);
   snowflake.style.setProperty('--fall-delay', `${delay}s`);
+  snowflake.style.setProperty('--sway1', `${sway1}vw`);
+  snowflake.style.setProperty('--sway2', `${sway2}vw`);
 
   return snowflake;
 }
