@@ -19,9 +19,30 @@ html {
 body {
   display: flow-root; /* prevent margin collapse */
 
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body {
-  background-color: lightgray;
+  background-color: white;
+}
+
+.snowflake {
+  position: absolute;
+  
+  pointer-events: none;
+  user-select: none;
+
+  animation: linear 1 forwards fall;
+  animation-duration: 10s;
+
+  will-change: transform;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
