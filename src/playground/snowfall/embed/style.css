@@ -29,13 +29,15 @@ body {
 .snowflake {
   position: absolute;
   
-  pointer-events: none;
-  user-select: none;
+  font-size: var(--size);
 
   animation: linear 1 forwards fall;
   animation-duration: var(--fall-duration);
 
   will-change: transform;
+
+  pointer-events: none;
+  user-select: none;
 }
 
 @keyframes fall {

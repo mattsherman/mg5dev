@@ -14,10 +14,13 @@ function createSnowflake(): HTMLElement {
   snowflake.innerHTML = '❄️';
 
   const left = getRandomInteger(0, 100);
+  const size = getRandomFloat(18, 20);
+
   const fallDuration = getRandomFloat(9, 10);
 
   snowflake.style.left = `${left}%`;
 
+  snowflake.style.setProperty('--size', `${size}px`);
   snowflake.style.setProperty('--fall-duration', `${fallDuration}s`);
 
   return snowflake;
