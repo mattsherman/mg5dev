@@ -33,6 +33,7 @@ body {
 
   animation: linear 1 forwards fall;
   animation-duration: var(--fall-duration);
+  animation-delay: var(--fall-delay);
 
   will-change: transform;
 
