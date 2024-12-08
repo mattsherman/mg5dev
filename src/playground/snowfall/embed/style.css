@@ -50,12 +50,12 @@ body {
     transform: translateY(0) translateX(0);
   }
   25% {
-    transform: translateY(25vh) translateX(var(--sway1));
+    transform: translateY(calc(var(--container-height) * 0.25)) translateX(var(--sway1));
   }
   75% {
-    transform: translateY(75vh) translateX(var(--sway2));
+    transform: translateY(calc(var(--container-height) * 0.75)) translateX(var(--sway2));
   }
   100% {
-    transform: translateY(100vh) translateX(0);
+    transform: translateY(var(--container-height)) translateX(0);
   }
 }

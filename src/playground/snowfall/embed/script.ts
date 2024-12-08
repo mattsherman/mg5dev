@@ -1,4 +1,5 @@
-const body = document.getElementsByTagName('body')[0];
+const container = document.getElementsByTagName('body')[0];
+const containerHeight = container.clientHeight;
 
 function getRandomInteger(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -27,6 +28,7 @@ function createSnowflake(): HTMLElement {
 
   snowflake.style.left = `${left}%`;
 
+  snowflake.style.setProperty('--container-height', `${containerHeight}px`);
   snowflake.style.setProperty('--size', `${size}px`);
   snowflake.style.setProperty('--fall-duration', `${fallDuration}s`);
   snowflake.style.setProperty('--fall-delay', `${delay}s`);
@@ -47,4 +49,4 @@ function createSnowflakes(num: number): DocumentFragment {
   return fragment;
 }
 
-body.appendChild(createSnowflakes(2000));
+container.appendChild(createSnowflakes(2000));
