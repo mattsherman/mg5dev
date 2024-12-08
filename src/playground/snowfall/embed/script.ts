@@ -46,6 +46,10 @@ function createSnowflakes(num: number): DocumentFragment {
   for (let i = 0; i < num; i++) {
     const snowflake = createSnowflake();
     fragment.appendChild(snowflake);
+
+    snowflake.addEventListener('animationend', () => {
+      snowflake.remove();
+    });
   }
 
   return fragment;
