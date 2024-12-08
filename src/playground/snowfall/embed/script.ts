@@ -26,6 +26,8 @@ function createSnowflake(): HTMLElement {
   const delay = getRandomFloat(0, 10);
   const sway1 = getRandomFloat(-0.02, 0.02);
   const sway2 = getRandomFloat(-0.02, 0.02);
+  const rotation1 = getRandomFloat(-90, 90);
+  const rotation2 = getRandomFloat(-90, 90);
   const depth = getRandomInteger(-10, 10);
 
   snowflake.style.left = `${left}%`;
@@ -38,6 +40,8 @@ function createSnowflake(): HTMLElement {
   snowflake.style.setProperty('--fall-delay', `${delay}s`);
   snowflake.style.setProperty('--sway1', `${sway1}`);
   snowflake.style.setProperty('--sway2', `${sway2}`);
+  snowflake.style.setProperty('--rotation1', `${rotation1}deg`);
+  snowflake.style.setProperty('--rotation2', `${rotation2}deg`);
 
   return snowflake;
 }
