@@ -48,7 +48,10 @@ function createSnowflakes(num: number): DocumentFragment {
     fragment.appendChild(snowflake);
 
     snowflake.addEventListener('animationend', () => {
-      snowflake.remove();
+      globalThis.setTimeout(
+        () => snowflake.remove(),
+        getRandomInteger(500, 2000)
+      );
     });
   }
 
