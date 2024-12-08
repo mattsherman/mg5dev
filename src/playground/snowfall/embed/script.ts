@@ -20,7 +20,7 @@ function createSnowflake(): HTMLElement {
   snowflake.classList.add('snowflake');
   snowflake.innerHTML = '❄️';
 
-  const left = getRandomInteger(0, 100);
+  const left = getRandomFloat(0, 100);
   const size = getRandomFloat(5, 20);
   const fallDuration = 20 - size / 2 + getRandomFloat(-2, 2);
   const delay = getRandomFloat(0, 10);
