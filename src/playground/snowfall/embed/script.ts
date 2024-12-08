@@ -51,4 +51,22 @@ function createSnowflakes(num: number): DocumentFragment {
   return fragment;
 }
 
+let lastTime: number;
+
+function tick(timestamp: number) {
+  if (lastTime === undefined) {
+    lastTime = timestamp;
+  }
+  const delta = timestamp - lastTime;
+
+  if (delta > 2000) {
+    lastTime = timestamp;
+    container.appendChild(createSnowflakes(500));
+  }
+
+  globalThis.requestAnimationFrame(tick);
+}
+
 container.appendChild(createSnowflakes(2000));
+
+globalThis.requestAnimationFrame(tick);
