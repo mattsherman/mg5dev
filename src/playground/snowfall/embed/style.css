@@ -56,6 +56,6 @@ body {
     transform: translateY(calc(var(--container-height) * 0.75)) translateX(calc(var(--container-width) * var(--sway2)));
   }
   100% {
-    transform: translateY(var(--container-height)) translateX(0);
+    transform: translateY(calc(var(--container-height) - var(--depth))) translateX(0);
   }
 }

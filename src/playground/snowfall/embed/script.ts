@@ -26,11 +26,13 @@ function createSnowflake(): HTMLElement {
   const delay = getRandomFloat(0, 10);
   const sway1 = getRandomFloat(-0.02, 0.02);
   const sway2 = getRandomFloat(-0.02, 0.02);
+  const depth = getRandomInteger(-10, 10);
 
   snowflake.style.left = `${left}%`;
 
   snowflake.style.setProperty('--container-height', `${containerHeight}px`);
   snowflake.style.setProperty('--container-width', `${containerWidth}px`);
+  snowflake.style.setProperty('--depth', `${depth}px`);
   snowflake.style.setProperty('--size', `${size}px`);
   snowflake.style.setProperty('--fall-duration', `${fallDuration}s`);
   snowflake.style.setProperty('--fall-delay', `${delay}s`);
@@ -50,7 +52,7 @@ function createSnowflakes(num: number): DocumentFragment {
     snowflake.addEventListener('animationend', () => {
       globalThis.setTimeout(
         () => snowflake.remove(),
-        getRandomInteger(500, 2000)
+        getRandomInteger(100, 5000)
       );
     });
   }
