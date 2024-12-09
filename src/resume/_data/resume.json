@@ -7,7 +7,7 @@
     "github": "mattsherman",
     "linkedin": "matthewsherman"
   },
-  "summary": "Full stack software engineer with extensive experience delivering commercial and open-source applications for the cloud, web, and desktop in the e-commerce, publishing, and security industries. Focused on user experience and extensibility. Proven track record in technical and project leadership. A decade of experience working with fully distributed teams.",
+  "summary": "Full stack software engineer with extensive experience delivering commercial and open-source applications in the e-commerce, content management, and security industries. Proven track record in technical and project leadership. A decade of experience working with fully distributed teams.",
   "positions": [
     {
       "title": "Senior Software Engineer",
@@ -16,10 +16,9 @@
       "startDate": "2020-02T00:00-0400",
       "endDate": "2024-10T00:00-0400",
       "details": [
-        "Delivered new admin dashboard, analytics, and management features for WooCommerce using React, TypeScript, HTML, and CSS to improve performance, responsiveness, and user experience",
+        "Delivered new admin dashboard, analytics, and management features for WooCommerce using React and TypeScript, to improve performance, responsiveness, and user experience",
         "Designed and implemented reusable React components to improve consistency and developer efficiency",
         "Implemented REST APIs, for both internal consumption and third-party integrations",
-        "Implemented React and PHP APIs, enabling extension of WooCommerce by third-party developers",
         "Improved usability and accessibility of WooCommerce and nine commercial extensions",
         "Engaged with third-party developers to gather feedback and share best practices",
         "Collaborated with product management to define and prioritize project scope, timelines, and deliverables",
@@ -52,7 +51,7 @@
       "startDate": "2014-10T00:00-0400",
       "endDate": "2017-12T00:00-0500",
       "details": [
-        "Developed site admin management features for WordPress.com using React, JavaScript, HTML, and CSS, to enhance usability and performance",
+        "Developed site admin management features for WordPress.com using React and JavaScript, to enhance usability and performance",
         "Created event-driven email and push notification framework and API, enabling user engagement improvements and increased customer success",
         "Implemented usability improvements for Cloudup using JavaScript and Node",
         "Conducted regular code reviews, ensuring maintainable code and adherence to best practices"
@@ -120,7 +119,15 @@
       "Procedural",
       "Declarative"
     ],
-    "Frameworks": ["React", "Redux", "Node", "Deno", "WordPress", "WooCommerce", ".NET"],
+    "Frameworks": [
+      "React",
+      "Redux",
+      "Node",
+      "Deno",
+      "WordPress",
+      "WooCommerce",
+      ".NET"
+    ],
     "Testing": ["Jest", "Playwright", "PHPUnit"],
     "Tools": ["Git", "GitHub", "VS Code", "Docker", "MySQL"],
     "Methodologies": ["Agile", "Scrum", "Kanban"],
