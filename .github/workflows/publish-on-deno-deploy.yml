@@ -21,11 +21,12 @@ jobs:
           deno-version: v2.x
 
       - name: Build site
+        working-directory: ./apps/website
         run: deno task build
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: mattsherman-mg5-dev-web
-          import-map: "./deno.json"
           entrypoint: serve.ts
+          root: apps/website
