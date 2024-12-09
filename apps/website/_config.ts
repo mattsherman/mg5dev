@@ -1,3 +1,5 @@
+import { resolve } from 'jsr:@std/path';
+
 import lume from 'lume/mod.ts';
 
 import date from 'lume/plugins/date.ts';
@@ -37,6 +39,22 @@ site.use(
       minify: false,
       platform: 'browser',
       target: 'esnext',
+      plugins: [
+        {
+          name: 'import-map-alias',
+          setup(build) {
+            build.onResolve({ filter: /^@mg5dev\/(.+)$/ }, (args) => {
+              const packageName = args.path.replace('@mg5dev/', '');
+              const resolvedPath = resolve(
+                '../../packages',
+                packageName,
+                'mod.ts'
+              );
+              return { path: resolvedPath, namespace: 'file' };
+            });
+          },
+        },
+      ],
     },
   })
 );
