@@ -1,0 +1,9 @@
+{
+  "workspace": ["./apps/website", "./packages/snowfall"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact",
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"],
+    "types": ["lume/types.ts"]
+  }
+}
