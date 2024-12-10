@@ -28,7 +28,7 @@ export class SnowfallScene {
   }
 
   #createSnowflakes(num: number): DocumentFragment {
-    const fragment = document.createDocumentFragment();
+    const fragment = this.#container.ownerDocument.createDocumentFragment();
 
     for (let i = 0; i < num; i++) {
       const snowflake = this.#createSnowflake();
@@ -49,7 +49,7 @@ export class SnowfallScene {
     const containerHeight = this.#container.clientHeight;
     const containerWidth = this.#container.clientWidth;
 
-    const snowflake = document.createElement('div');
+    const snowflake = this.#container.ownerDocument.createElement('div');
     snowflake.classList.add('snowflake');
     snowflake.innerHTML = '❄️';
 
