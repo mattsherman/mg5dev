@@ -1,5 +1,6 @@
-import { snowfall } from '@mg5dev/snowfall';
+import { SnowfallScene } from '../../../../../../packages/snowfall/mod.ts';
 
 const container = document.getElementsByTagName('body')[0];
 
-snowfall(container);
+const scene = new SnowfallScene(container);
+scene.start();
