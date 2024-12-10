@@ -1,3 +1,5 @@
+import { getRandomInteger, getRandomFloat } from '../rando/mod.ts';
+
 export class SnowfallScene {
   #container: HTMLElement;
   #lastTime: number | undefined;
@@ -35,7 +37,7 @@ export class SnowfallScene {
       snowflake.addEventListener('animationend', () => {
         globalThis.setTimeout(
           () => snowflake.remove(),
-          SnowfallScene.getRandomInteger(100, 5000)
+          getRandomInteger(100, 5000)
         );
       });
     }
@@ -51,15 +53,15 @@ export class SnowfallScene {
     snowflake.classList.add('snowflake');
     snowflake.innerHTML = '❄️';
 
-    const left = SnowfallScene.getRandomFloat(0, 100);
-    const size = SnowfallScene.getRandomFloat(5, 20);
-    const fallDuration = 20 - size / 2 + SnowfallScene.getRandomFloat(-2, 2);
-    const delay = SnowfallScene.getRandomFloat(0, 10);
-    const sway1 = SnowfallScene.getRandomFloat(-0.02, 0.02);
-    const sway2 = SnowfallScene.getRandomFloat(-0.02, 0.02);
-    const rotation1 = SnowfallScene.getRandomFloat(-90, 90);
-    const rotation2 = SnowfallScene.getRandomFloat(-90, 90);
-    const depth = SnowfallScene.getRandomInteger(-10, 10);
+    const left = getRandomFloat(0, 100);
+    const size = getRandomFloat(5, 20);
+    const fallDuration = 20 - size / 2 + getRandomFloat(-2, 2);
+    const delay = getRandomFloat(0, 10);
+    const sway1 = getRandomFloat(-0.02, 0.02);
+    const sway2 = getRandomFloat(-0.02, 0.02);
+    const rotation1 = getRandomFloat(-90, 90);
+    const rotation2 = getRandomFloat(-90, 90);
+    const depth = getRandomInteger(-10, 10);
 
     snowflake.style.left = `${left}%`;
 
@@ -75,18 +77,5 @@ export class SnowfallScene {
     snowflake.style.setProperty('--rotation2', `${rotation2}deg`);
 
     return snowflake;
-  }
-
-  static getRandomInteger(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-  static getRandomFloat(
-    min: number,
-    max: number,
-    decimalPlaces: number = 2
-  ): number {
-    const randomFloat = Math.random() * (max - min) + min;
-    return parseFloat(randomFloat.toFixed(decimalPlaces));
   }
 }
