@@ -18,6 +18,12 @@ export class SnowfallScene {
     const style = doc.createElement('style');
     style.textContent = `
       .mg5dev-snowfall-scene {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
         background-color: white;
       }
 
@@ -72,11 +78,6 @@ export class SnowfallScene {
     const rootElement = doc.createElement('div');
 
     rootElement.classList.add('mg5dev-snowfall-scene');
-    rootElement.style.position = 'fixed';
-    rootElement.style.top = '0';
-    rootElement.style.left = '0';
-    rootElement.style.width = '100%';
-    rootElement.style.height = '100%';
 
     rootElement.appendChild(this.#createRootElementStyle(doc));
 
