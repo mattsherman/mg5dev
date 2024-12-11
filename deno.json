@@ -1,5 +1,5 @@
 {
-  "workspace": ["./apps/website", "./packages/snowfall"],
+  "workspace": ["./apps/website", "./packages/snowfall", "./packages/rando"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "npm:preact",
