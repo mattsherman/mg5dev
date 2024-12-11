@@ -1,16 +1,86 @@
 import { getRandomInteger, getRandomFloat } from '../rando/mod.ts';
 
 export class SnowfallScene {
-  #container: HTMLElement;
+  #rootElement: HTMLElement;
   #lastTime: number | undefined;
 
   constructor(container: HTMLElement) {
-    this.#container = container;
+    this.#rootElement = this.#createRootElement(container.ownerDocument);
+    container.appendChild(this.#rootElement);
   }
 
   start() {
-    this.#container.appendChild(this.#createSnowflakes(2000));
+    this.#rootElement.appendChild(this.#createSnowflakes(2000));
     globalThis.requestAnimationFrame((timestamp) => this.#tick(timestamp));
+  }
+
+  #createRootElementStyle(doc: Document): HTMLStyleElement {
+    const style = doc.createElement('style');
+    style.textContent = `
+      .mg5dev-snowfall-scene {
+        background-color: white;
+      }
+
+      .mg5dev-snowfall-scene .snowflake {
+        position: absolute;
+        top: -20px;
+      
+        opacity: 0.5;
+
+        font-size: var(--size);
+        z-index: var(--size);
+
+        animation: linear 1 forwards fall;
+        animation-duration: var(--fall-duration);
+        animation-delay: var(--fall-delay);
+
+        will-change: transform;
+
+        pointer-events: none;
+        user-select: none;
+      }
+
+      @keyframes fall {
+        0% {
+          transform:
+            translateY(0)
+            translateX(0);
+        }
+        25% {
+          transform:
+            translateY(calc(var(--container-height) * 0.25))
+            translateX(calc(var(--container-width) * var(--sway1)))
+            rotate(var(--rotation1));
+        }
+        75% {
+          transform:
+            translateY(calc(var(--container-height) * 0.75))
+            translateX(calc(var(--container-width) * var(--sway2)))
+            rotate(var(--rotation2));
+        }
+        100% {
+          transform:
+            translateY(calc(var(--container-height) - var(--depth)))
+            translateX(0);
+        }
+      }
+    `;
+    return style;
+  }
+
+  #createRootElement(doc: Document): HTMLElement {
+    const rootElement = doc.createElement('div');
+
+    rootElement.classList.add('mg5dev-snowfall-scene');
+    rootElement.style.position = 'fixed';
+    rootElement.style.top = '0';
+    rootElement.style.left = '0';
+    rootElement.style.width = '100%';
+    rootElement.style.height = '100%';
+
+    rootElement.appendChild(this.#createRootElementStyle(doc));
+
+    return rootElement;
   }
 
   #tick(timestamp: number) {
@@ -21,14 +91,14 @@ export class SnowfallScene {
 
     if (delta > 2000) {
       this.#lastTime = timestamp;
-      this.#container.appendChild(this.#createSnowflakes(500));
+      this.#rootElement.appendChild(this.#createSnowflakes(500));
     }
 
     globalThis.requestAnimationFrame((timestamp) => this.#tick(timestamp));
   }
 
   #createSnowflakes(num: number): DocumentFragment {
-    const fragment = this.#container.ownerDocument.createDocumentFragment();
+    const fragment = this.#rootElement.ownerDocument.createDocumentFragment();
 
     for (let i = 0; i < num; i++) {
       const snowflake = this.#createSnowflake();
@@ -46,10 +116,10 @@ export class SnowfallScene {
   }
 
   #createSnowflake(): HTMLElement {
-    const containerHeight = this.#container.clientHeight;
-    const containerWidth = this.#container.clientWidth;
+    const containerHeight = this.#rootElement.clientHeight;
+    const containerWidth = this.#rootElement.clientWidth;
 
-    const snowflake = this.#container.ownerDocument.createElement('div');
+    const snowflake = this.#rootElement.ownerDocument.createElement('div');
     snowflake.classList.add('snowflake');
     snowflake.innerHTML = '❄️';
 
