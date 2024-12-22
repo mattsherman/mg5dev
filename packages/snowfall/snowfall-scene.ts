@@ -78,7 +78,6 @@ export class SnowfallScene {
     const rootElement = doc.createElement('div');
 
     rootElement.classList.add('mg5dev-snowfall-scene');
-
     rootElement.appendChild(this.#createRootElementStyle(doc));
 
     return rootElement;
