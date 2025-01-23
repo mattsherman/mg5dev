@@ -8,9 +8,10 @@ import mdx from 'lume/plugins/mdx.ts';
 import prism from 'lume/plugins/prism.ts';
 
 // Additional prism language support
-import 'npm:prismjs@1.29.0/components/prism-typescript.js';
+import 'npm:prismjs@1.29.0/components/prism-csharp.js';
 import 'npm:prismjs@1.29.0/components/prism-markup-templating.js';
 import 'npm:prismjs@1.29.0/components/prism-php.js';
+import 'npm:prismjs@1.29.0/components/prism-typescript.js';
 
 import cacheBusting from 'lume/middlewares/cache_busting.ts';
 
