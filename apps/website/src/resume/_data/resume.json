@@ -1,20 +1,24 @@
 {
   "personalInformation": {
     "name": "Matt Sherman",
-    "title": "Senior Full Stack Software Engineer, Tech Lead, and Manager",
+    "title": "Software Tech Lead and Manager",
     "email": "m@jam123.com",
     "location": "Fairport, NY",
     "github": "mattsherman",
     "linkedin": "matthewsherman"
   },
-  "summary": "Full stack software engineer with extensive experience delivering commercial and open-source applications in the e-commerce, content management, and security industries. Proven track record in technical and project leadership. A decade of experience working with fully distributed teams.",
+  "summary": "Software tech lead and manager with extensive experience delivering commercial and open-source full-stack applications in the e-commerce, content management, and security industries. Proven track record in technical and project leadership. A decade of experience working with fully distributed teams.",
   "positions": [
     {
-      "title": "Senior Advanced Software Engineer",
-      "company": "LenelS2",
+      "title": "Software Tech Lead",
+      "company": "LenelS2 by Honeywell",
       "location": "Pittsford, NY",
       "startDate": "2025-02-17T00:00-0400",
-      "details": ["Details coming soon..."]
+      "details": [
+        "Leads delivery team developing mobile credential management solutions for LenelS2 products, providing customers with easy to deploy, secure credentials for Apple and Android platforms",
+        "Product Security Advocate, working with delivery team and security team to ensure solution meets security best practices",
+        "Conducts regular code reviews, ensuring robust, maintainable code"
+      ]
     },
     {
       "title": "Senior Software Engineer",
