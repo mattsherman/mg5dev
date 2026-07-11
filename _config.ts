@@ -26,8 +26,7 @@ const site = lume({
 
 site.data('cacheBusterVersion', `v${Date.now()}`);
 
-site.copy('static');
-site.copy(['.css', '.html']);
+
 
 site.use(
   esbuild({
@@ -54,9 +53,9 @@ site.use(
   prism({
     theme: {
       name: 'okaidia',
-      path: '/prism-code-themes/okaidia.css',
+      cssFile: '/prism-code-themes/okaidia.css',
     },
-  })
+  }),
 );
 
 site.use(
@@ -75,5 +74,8 @@ site.use(
     },
   })
 );
+
+site.copy('static');
+site.copy(['.css', '.html']);
 
 export default site;
