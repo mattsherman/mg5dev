@@ -1,4 +1,4 @@
-# mg5dev/apps/website
+# mg5dev
 
 This is the repository for https://mg5.dev, Matt Sherman's development web site.
 
