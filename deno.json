@@ -62,6 +62,5 @@
     "rules": {
       "exclude": ["no-import-prefix"]
     }
-  },
-  "lock": false
+  }
 }
