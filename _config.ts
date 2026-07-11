@@ -41,6 +41,7 @@ site.use(
     },
   })
 );
+site.add('/playground/snowfall/embed/script.ts');
 
 site.use(jsx());
 
