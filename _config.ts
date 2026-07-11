@@ -3,7 +3,7 @@ import lume from 'lume/mod.ts';
 import date from 'lume/plugins/date.ts';
 import esbuild from 'lume/plugins/esbuild.ts';
 import feed from 'lume/plugins/feed.ts';
-import jsx from 'lume/plugins/jsx_preact.ts';
+import jsx from 'lume/plugins/jsx.ts';
 import mdx from 'lume/plugins/mdx.ts';
 import prism from 'lume/plugins/prism.ts';
 
