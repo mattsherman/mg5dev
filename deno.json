@@ -1,9 +1,25 @@
 {
-  "workspace": ["./apps/website", "./packages/snowfall", "./packages/rando"],
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.3.2/"
+  },
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "npm:preact",
     "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"],
     "types": ["lume/types.ts"]
+  },
+  "tasks": {
+    "lume": {
+      "description": "Run Lume command",
+      "command": "deno run lume/cli.ts"
+    },
+    "build": {
+      "description": "Build the site for production",
+      "command": "deno task lume"
+    },
+    "serve": {
+      "description": "Run and serve the site for development",
+      "command": "deno task lume -s"
+    }
   }
 }

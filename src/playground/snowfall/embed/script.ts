@@ -1,4 +1,4 @@
-import { SnowfallScene } from '../../../../../../packages/snowfall/mod.ts';
+import { SnowfallScene } from './snowfall-scene.ts';
 
 const container = document.getElementsByTagName('body')[0];
 

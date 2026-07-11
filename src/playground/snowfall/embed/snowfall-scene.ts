@@ -1,4 +1,4 @@
-import { getRandomInteger, getRandomFloat } from '../rando/mod.ts';
+import { getRandomFloat, getRandomInteger } from './rando.ts';
 
 export class SnowfallScene {
   #rootElement: HTMLElement;
@@ -107,7 +107,7 @@ export class SnowfallScene {
       snowflake.addEventListener('animationend', () => {
         globalThis.setTimeout(
           () => snowflake.remove(),
-          getRandomInteger(100, 5000)
+          getRandomInteger(100, 5000),
         );
       });
     }
