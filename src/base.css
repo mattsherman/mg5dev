@@ -96,7 +96,7 @@ body > nav {
   background-color: rgb(from var(--header-color) r g b / 0.95);
   backdrop-filter: blur(2px);
 
-  text-transform: uppercase;
+  text-transform: lowercase;
 
   transition: transform 0.3s ease-in-out;
 

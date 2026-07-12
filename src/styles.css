@@ -13,8 +13,6 @@ body > main {
 
     margin: 5rem 0 3rem;
 
-    text-transform: uppercase;
-
     h1 {
       font-size: 2rem;
       font-weight: 800;
@@ -25,16 +23,12 @@ body > main {
     font-size: 1.25rem;
 
     margin: 1.5rem 0; 
-
-    text-transform: uppercase;
   }
 
   h3 {
     font-size: 1.125rem;
 
     margin: 1.5rem 0; 
-
-    text-transform: uppercase;
   }
 
   p {
@@ -56,7 +50,7 @@ body > footer {
   margin-top: 5rem;
 
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 /* Specific styles */
@@ -135,21 +129,19 @@ body > footer {
       flex-direction: row;
       align-items: center;
 
-      padding: 0.5em;
+      padding: 0.5em 1em 0.5em 0.5em;
       gap: 0.5em;
+
+      border: 0.10em solid var(--base-background-color);
+      border-radius: 0.50em;
 
       font-size: 1.5rem;
 
-      text-transform: uppercase;
+      text-transform: lowercase;
 
       svg.icon {
         width: 3em;
         height: 3em;
-
-        padding: 0.20em;
-
-        border: 0.20em solid var(--base-background-color);
-        border-radius: 0.20em;
 
         fill: var(--base-background-color);
       }
@@ -188,8 +180,6 @@ body > footer {
   margin-bottom: 3rem;
 
   > header {
-    text-transform: uppercase;
-
     h2 {
       margin: 0.5rem 0;
 
