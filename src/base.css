@@ -103,7 +103,7 @@ body > nav {
   .header-breadcrumb {
     flex: 1;
 
-    --horizontal-list-separator: "▸";
+    --horizontal-list-separator: "⦂";
   }
 
   a.icon-and-text,
