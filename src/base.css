@@ -9,7 +9,7 @@
 
   --base-secondary-color: hsl(from var(--base-color) h s calc(l + 10));
 
-  --header-color: #6a0dad;
+  --header-color: #4f0f7d;
   --header-secondary-color: hsl(from var(--header-color) h s calc(l + 5));
 
   --link-color: #c34100;
