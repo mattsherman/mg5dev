@@ -142,7 +142,7 @@ body > footer {
 
       text-transform: uppercase;
 
-      .icon {
+      svg.icon {
         width: 3em;
         height: 3em;
 
@@ -159,7 +159,7 @@ body > footer {
       color: inherit;
 
       svg.icon {
-        fill: inherit;
+        fill: var(--base-background-color);
       }
     }
 
